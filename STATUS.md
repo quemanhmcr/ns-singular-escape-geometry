@@ -19,3 +19,6 @@
 ## Missing result
 
 A global quantitative depletion/barrier for coherent heterochiral triads sufficient to prevent an infinite singular escape chain.
+
+## Latest focused note
+- `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.
