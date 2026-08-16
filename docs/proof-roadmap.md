@@ -106,7 +106,7 @@ or directly in \(\kappa\), sufficient to force \(\nu_E\le\nu\) before \(K\) can 
 
 ## Next technical directions
 
-1. Fix a scale-consistent packet/localization framework, then seek a dynamical bound for \(\mathfrak A_D=\int E(\Gamma)_+dt\), the strong defect action that closes by itself.
-2. If that strong action is inaccessible, bound the sharper relative-defect production action \(\mathfrak A_Q\) and macroscopic reset action \(\mathfrak R_Q\); together they control the bypass entropy and all critical-norm growth.
-3. Control the explicit spin-mixing variance action, then relate either total-defect route to the microscopic phase/projective reset network and the within-spin \((\Gamma_{\rm sp})_+\) Riccati route.
+1. Fix a scale-consistent packet/localization framework, then seek a dynamical bound for the two-invariant action \(\mathfrak A_r=\int E(\Gamma_r)_+dt\), whose barrier closes by itself.
+2. In the total-defect route, bound \(\mathfrak A_D=\int E(\Gamma)_+dt\) directly or control its explicit spin-mixing variance action in addition to its within-spin part.
+3. If those strong actions are inaccessible, bound the sharper relative-defect production action \(\mathfrak A_Q\) and macroscopic reset action \(\mathfrak R_Q\); together they control the bypass entropy and all critical-norm growth.
 4. Stress-test each global estimate on explicit triads, cancellation ladders, symmetry quotients, diamonds, and critical stacks.

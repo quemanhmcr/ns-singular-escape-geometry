@@ -28,6 +28,16 @@ Let \(a,b\) minimize
 \qquad
 r:=\Lambda u-au-b\omega.
 \]
+Where the Gram matrix is nonsingular, this is explicitly the orthogonal projection with
+\[
+\binom ab=
+\begin{pmatrix}E&H\\H&Z\end{pmatrix}^{-1}
+\binom KJ,
+\qquad
+H:=\langle u,\omega\rangle,
+\quad J:=\langle\Lambda u,\omega\rangle,
+\]
+and \(\mathcal Y=Z-(K,J)\begin{pmatrix}E&H\\H&Z\end{pmatrix}^{-1}(K,J)^\top\). At a Gram-degenerate point, \(\omega\) is proportional to \(u\), hence \(\Lambda u\) already lies in their span and \(r=0\); the formulas below are understood by continuity there.
 Since \(r\perp u,\omega\) and the Euler forcing \(F=P(u\times\omega)\) satisfies
 \[
 \langle u,F\rangle=\langle\omega,F\rangle=0,
@@ -36,11 +46,57 @@ the critical production is exactly
 \[
 \boxed{\kappa=\langle\Lambda u,F\rangle=\langle r,F\rangle}.
 \]
-For \(\mathcal Y=\|r\|_2^2\), stationarity of the minimizer gives
+Put \(\mathcal L=\Lambda-a-b\operatorname{curl}\), so \(r=\mathcal Lu\), and define
 \[
-\boxed{\mathcal Y'=2\Gamma-2\nu\|\Lambda r\|_2^2}.
+\Gamma_r:=\langle\mathcal Lr,F\rangle.
 \]
-Thus singular escape must repeatedly leave the energy-helicity protected directions.
+For \(\mathcal Y=\|r\|_2^2\), stationarity of the minimizer and commutation of \(\mathcal L\) with \(\Lambda^2\) give the exact balance
+\[
+\boxed{\mathcal Y'=2\Gamma_r-2\nu\|\Lambda r\|_2^2}.
+\]
+The derivatives of \(a,b\) disappear because \(r\perp u,\omega\). For the nonlinear term, \(\mathcal L\) commutes with the Leray projection and
+\(\langle r,u\cdot\nabla r\rangle=0\), which gives the exact commutator form
+\[
+\boxed{
+\Gamma_r
+=-\langle r,[\Lambda-b\operatorname{curl},u\cdot\nabla]u\rangle.}
+\]
+
+This projection yields a second scale-invariant defect action. Set
+\[
+R:=E\mathcal Y,
+\qquad
+\mathfrak A_r(I):=\int_I E\,(\Gamma_r)_+\,dt.
+\]
+Under Navier--Stokes scaling the minimizer obeys \(a_\lambda=\lambda a\), \(b_\lambda=b\), hence \(\mathcal Y_\lambda=\lambda\mathcal Y\) and \((\Gamma_r)_\lambda=\lambda^3\Gamma_r\). Since \(E\) has weight \(-1\), both \(R\) and \(\mathfrak A_r\) are scale invariant. Combining the preceding balance with \(E'=-2\nu Z\) gives
+\[
+R'=2E\Gamma_r-2\nu E\|\Lambda r\|_2^2-2\nu Z\mathcal Y,
+\qquad
+R(t)\le R(t_0)+2\mathfrak A_r([t_0,t]).
+\]
+
+It also gives a sharper critical barrier. From \(\kappa=\langle r,u\times\omega\rangle\),
+\[
+|\kappa|\le C_*\mathcal Y^{1/2}Z^{1/2}M_3^{1/2}.
+\]
+If \(K'>0\), then \(\kappa>\nu M_3\). Using \(Z^2\le KM_3\) and \(Z\ge K^2/E\), one obtains
+\[
+\boxed{
+|\nu_E|\le C_*\sqrt{\frac RK},
+\qquad
+K'>0\ \Longrightarrow\ R>\frac{\nu^2}{C_*^2}K.}
+\]
+Consequently, if \(R_*:=R(t_0)+2\mathfrak A_r([t_0,T))<\infty\), then \(K'\le0\) whenever \(K\ge R_*/a\), where \(a=\nu^2/C_*^2\). A first-crossing argument proves
+\[
+\boxed{\sup_{t_0\le t<T}K(t)\le\max\{K(t_0),R_*/a\}.}
+\]
+More locally, if \(K(t_0)<L\) and \(t_L\) is the first upward hitting time of \(L\), smoothness supplies positive-growth times approaching \(t_L\). The barrier then gives \(\sup_{[t_0,t_L]}R\ge aL\), hence
+\[
+\boxed{\mathfrak A_r([t_0,t_L])\ge\frac12\bigl(aL-R(t_0)\bigr)_+.}
+\]
+Thus critical-norm escape forces \(\mathfrak A_r([0,T_*))=\infty\), with a linear scale-invariant action cost for every new critical level.
+
+This is not a closure: \(\Gamma_r\) is a two-invariant centered commutator, not automatically the same production as \(\Gamma_{\rm sp}\). It is, however, the cleanest entropy presently available: it removes both Euler-tangent directions before measuring escape, and needs no separate spin-mixing or reset term once its action is controlled.
 
 ## 2. Corrected topology of diagonal quadratic invariants
 

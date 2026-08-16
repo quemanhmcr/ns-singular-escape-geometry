@@ -15,13 +15,14 @@
 - Finite lifetime budget \(\int(K^2+D)dt<\infty\).
 - Exact defect evolution and commutator collapse.
 - Defect-envelope criterion: finite \(\mathfrak A_D=\int E(\Gamma)_+dt\) forces \(K\) to remain bounded.
+- Two-invariant defect envelope: finite \(\mathfrak A_r=\int E(\Gamma_r)_+dt\) forces \(K\) to remain bounded.
 - Exact split of total production into within-spin and spin-mixing variance production.
 - Helical decomposition indicating that dangerous critical production is heterochiral.
 - Finite-triad correction: same-spin sum-mirror potential, projective reset, and two-pair diamond propagation away from coefficient degeneracy.
 
 ## Missing result
 
-A genuinely dynamical defect-action bound. The strong immediately-closing form is \(\mathfrak A_D=\int E(\Gamma)_+dt<\infty\); a sufficient split controls its within-spin and explicit spin-mixing parts separately. The sharper scale-critical route seeks control of \(\mathfrak A_Q=\int(E/K)(\Gamma)_+dt\) and \(\mathfrak R_Q=\int(D/K)(-K')_+/K\,dt\). Static cancellation/diamond algebra alone is insufficient.
+A genuinely dynamical defect-action bound. The cleanest two-invariant form is \(\mathfrak A_r=\int E(\Gamma_r)_+dt<\infty\); the total-defect form is \(\mathfrak A_D=\int E(\Gamma)_+dt<\infty\), with a within-spin/spin-mixing split. The sharper scale-critical route seeks control of \(\mathfrak A_Q=\int(E/K)(\Gamma)_+dt\) and \(\mathfrak R_Q=\int(D/K)(-K')_+/K\,dt\). Static cancellation/diamond algebra alone is insufficient.
 
 ## Latest focused notes
 - `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.
