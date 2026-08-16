@@ -98,6 +98,22 @@ Thus critical-norm escape forces \(\mathfrak A_r([0,T_*))=\infty\), with a linea
 
 This is not a closure: \(\Gamma_r\) is a two-invariant centered commutator, not automatically the same production as \(\Gamma_{\rm sp}\). It is, however, the cleanest entropy presently available: it removes both Euler-tangent directions before measuring escape, and needs no separate spin-mixing or reset term once its action is controlled.
 
+The entropy retains an exact triadic symbol. For a helical triad with transfer rates \(T_i\), put
+\[
+\ell_i:=(1-\sigma_i b)|k_i|-a.
+\]
+Its Euler contribution is exactly
+\[
+\boxed{2\Gamma_{r,\tau}=\sum_{i\in\tau}\ell_i^2T_i.}
+\]
+For a homochiral triad of sign \(\sigma\), energy and helicity cancel the constant and linear parts of \(\ell_i^2\), leaving
+\[
+\boxed{
+2\Gamma_{r,\tau}
+=(1-\sigma b)^2(p-k)(q-k)(p-q)J.}
+\]
+Thus the two-invariant defect preserves the cubic radial-difference depletion of homochiral leakage. The heterochiral part, where the three \(\ell_i\) have different signed slopes, is exactly the remaining symbol-aware network problem.
+
 ## 2. Corrected topology of diagonal quadratic invariants
 
 For a nondegenerate helical triad \(\tau=(i,j,k)\), write
