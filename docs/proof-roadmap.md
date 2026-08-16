@@ -102,9 +102,7 @@ or directly in \(\kappa\), sufficient to force \(\nu_E\le\nu\) before \(K\) can 
 
 ## Next technical directions
 
-1. Write the exact helical triad coefficient for \(\kappa\) and \(\Gamma\), retaining the centered radial factors \((|k|-m)\).
-2. Separate local/narrow-band and nonlocal triads.
-3. Exploit incompressibility and geometric degeneracy of nearly collinear triads.
-4. Combine heterochiral phase constraints with the finite lifetime budget.
-5. Search for a monotone or one-sided quantity built from \(K,D,K_+,K_-\) whose Euler contribution cancels more strongly than in each component separately.
-6. Stress-test any proposed closing estimate against explicit Fourier triads before using it globally.
+1. Fix a scale-consistent packet/localization framework, then extend the finite-triad bookkeeping to the full centered \(\Gamma_{\rm sp}\) symbol.
+2. Prove a time-dependent, symbol-aware bound for weighted cancellation ladders; static diamond propagation has no uniform coercivity.
+3. Convert that normalized dynamical cost into the raw \((\Gamma_{\rm sp})_+\in L^1_t\) required by the Riccati argument.
+4. Stress-test each global estimate on explicit triads, cancellation ladders, diamonds, and critical stacks.

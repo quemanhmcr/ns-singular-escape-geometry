@@ -88,7 +88,7 @@ Hence positive critical escape necessarily creates opposite-spin catalyst critic
 
 For two consecutive positive handoffs, a downstream triad can reset the donor/child ratio of the upstream triad **without reverse \(K\)-flux**. Thus reset cost cannot be identified with an opposite signed flux. The correct obstruction comes from the full convolution algebra: consecutive selected handoffs automatically create missing diamond corners and cross-pair forcing.
 
-## 4. Exact mirror/catalyst coefficient comparison
+## 4. Corrected sum-mirror lemma
 
 Let \(K^\sigma,Q^\sigma\) be same-helicity modes with
 \[
@@ -98,57 +98,64 @@ P:=Q-K,\ p:=|P|,
 \qquad
 M:=Q+K,\ m:=|M|.
 \]
-The catalyst is taken in helicity \(-\sigma\), and choose the mirror output \(M\) also in helicity \(-\sigma\). Put
+Put
 \[
 S=q+k,\qquad \Delta=q-k,\qquad A=|Q\times K|.
 \]
-Using the full helical coefficient, both catalyst and mirror couplings contain the same factors \(\Delta A/(qk)\). More precisely, up to the same universal normalization,
+For \(a+b=c\), the normalized helical coefficient has modulus proportional to
 \[
-|C_{\rm cat}|=\Delta\frac{A}{pqk}(S+p),
+ |s_a a-s_b b|\frac{|a\times b|}{abc}
+ |s_a a+s_b b+s_c c|.
+\]
+This follows by expanding in the helical frame adapted to the triad plane. Hence the \(-\sigma\)-catalyst at \(P\) and the **same-spin** sum output at \(M\) satisfy, up to the same universal factor,
+\[
+|C_{\rm cat}|=\Delta\frac{A}{pqk}(S-p),
 \qquad
-|C_{\rm mir}|=\Delta\frac{A}{mqk}(S+m).
+|C_{\rm sum}|=\Delta\frac{A}{mqk}(S+m).
 \]
 Therefore
 \[
-\boxed{\frac{|C_{\rm mir}|}{|C_{\rm cat}|}=\frac{p(S+m)}{m(S+p)}}.
+\boxed{\frac{|C_{\rm sum}|}{|C_{\rm cat}|}=\frac{p(S+m)}{m(S-p)}}.
 \]
 Since \(p,m\le S\),
 \[
-\boxed{|C_{\rm mir}|\ge \frac{p}{2S}|C_{\rm cat}|}.
+\boxed{|C_{\rm sum}|\ge \frac{p}{S}|C_{\rm cat}|}.
 \]
-There is no independent angular-degeneracy loophole: if the area factor \(A\) vanishes, both couplings vanish together. In a local comparable channel \(p\gtrsim S\), mirror and catalyst couplings are comparable by an absolute constant.
+
+The opposite-spin output at \(M\) instead carries \(S-m\), and its ratio to the catalyst vanishes for nearly aligned parents. It cannot supply a uniform mirror bound.
 
 For the corresponding pair forcings, reality gives equal parent amplitudes at \(K\) and \(-K\), hence
 \[
-|G_{\rm mir}|\ge \frac{p}{2S}|G_{\rm cat}|.
+|G_{\rm sum}|\ge \frac{p}{S}|G_{\rm cat}|.
 \]
 Since the catalyst transfer obeys \(\kappa_\tau=pT_P\),
 \[
-\boxed{|\kappa_\tau|\le 4S\,|z_{-\sigma}(P)|\,|G_{\rm mir}|}.
+\boxed{|\kappa_\tau|\le C S\,|z_{-\sigma}(P)|\,|G_{\rm sum}|}.
 \]
-Thus the same true nonlinear interaction that creates critical escape necessarily creates an off-channel mirror forcing of comparable normalized size.
+Thus a critical catalyst forces a same-spin sum potential. The sum triad is homochiral, so it is leakage rather than a second source of \(K\)-production.
 
-## 5. Sparse-family mirror leakage inequality
+## 5. Pair potential, reset, and diamond propagation
 
 Consider a dyadic family \(\mathcal T_N\) with parent radii \(N\le k_\tau,q_\tau\le2N\). Let
 \[
 d_P:=\max_P\#\{\tau\in\mathcal T_N:P_\tau=P\}
 \]
-be catalyst multiplicity, and define the mirror pair potential
+be catalyst multiplicity, and define the sum-mirror pair potential
 \[
-\mathcal P_{\rm mir}:=\sum_{\tau\in\mathcal T_N}|G_{{\rm mir},\tau}|^2.
+\mathcal P_{\rm sum}:=\sum_{\tau\in\mathcal T_N}|G_{{\rm sum},\tau}|^2.
 \]
+For a selected positive family, write \(\kappa_{\mathcal T}:=\sum_{\tau\in\mathcal T_N}\kappa_\tau\).
 Summing the pairwise estimate and using Cauchy gives
 \[
-\boxed{\kappa_{\mathcal T}\le C N d_P^{1/2}E_{-\sigma}^{1/2}\mathcal P_{\rm mir}^{1/2}},
+\boxed{\kappa_{\mathcal T}\le C N d_P^{1/2}E_{-\sigma}^{1/2}\mathcal P_{\rm sum}^{1/2}},
 \]
 therefore
 \[
-\boxed{\mathcal P_{\rm mir}\ge c\frac{\kappa_{\mathcal T}^2}{N^2d_PE_{-\sigma}}}.
+\boxed{\mathcal P_{\rm sum}\ge c\frac{\kappa_{\mathcal T}^2}{N^2d_PE_{-\sigma}}}.
 \]
-If the family carries a fixed fraction of a positive event with \(\kappa\gtrsim\nu M_{3,N}\), its mirror pair potential is quantitatively large.
+If the family carries a fixed fraction of a positive event with \(\kappa\gtrsim\nu M_{3,N}\), its sum-mirror pair potential is quantitatively large.
 
-Pair potential is not yet actual forcing because many pairs may share one mirror output. For each output \(m\), let
+Pair potential is not yet actual forcing because many pairs may share one sum output. For each output \(m\), let
 \[
 G_m=\sum_{\alpha=1}^{R_m}g_{m,\alpha},
 \qquad
@@ -159,16 +166,40 @@ and
 D_m:=R_mP_m-|G_m|^2
 =\sum_{\alpha<\beta}|g_{m,\alpha}-g_{m,\beta}|^2.
 \]
-A simple partition yields the rigorous trichotomy
+This is an algebraic decomposition, not yet a global trichotomy.
+
+Two exact local facts sharpen the cancellation branch. First, for one positive handoff set \(e_K=|z_\sigma(K)|^2\), \(e_Q=|z_\sigma(Q)|^2\), and \(\rho=e_Q/e_K\). Then
 \[
-\boxed{\text{sparse positive escape}\Longrightarrow
-\begin{cases}
-\text{large actual mirror forcing},\\
-\text{large internal many-to-one deficit }\sum_mD_m,\\
-\text{or large forcing from additional cross-pairs.}
-\end{cases}}
+(\log\rho)'_\tau
+=-J\left(\frac{p+k}{e_Q}+\frac{q+p}{e_K}\right)>0,
+\qquad
+\Gamma_{\sigma,\tau}>0
+\Longleftrightarrow
+\rho<\sqrt{\frac{p+k}{q+p}}.
 \]
-The first branch leaves the sparse skeleton; the second is precisely the projective/Pexider coherence branch; the third means the supposedly sparse dynamics has already densified.
+Positive flux therefore exhausts a finite variance-recharge window unless another triad resets \(\rho\). Its full centered contribution is
+\[
+\boxed{
+2\Gamma_{{\rm sp},\tau}
+=\frac{\kappa_\tau}{p}
+\left[p(S-2m_\sigma)+kq-m_\sigma^2+(p-m_{-\sigma})^2\right].
+}
+\]
+The bracket has no fixed sign, so a pointwise \(\kappa>0\Rightarrow\Gamma_{\rm sp}>0\) argument is unavailable.
+
+Second, if two sum-pair contributions \(g_1,g_2\) share an output and
+\[
+|g_1+g_2|^2\le\eta^2(|g_1|^2+|g_2|^2),\qquad \eta<1,
+\]
+their additive diamond \(D=Q_1-Q_2=K_2-K_1\) has cross-pair contributions \(h_Q,h_K\) obeying
+\[
+\boxed{
+\max\{|h_Q|^2,|h_K|^2\}
+\ge\frac{1-\eta^2}{2}
+\frac{|C_QC_K|}{|C_1C_2|}(|g_1|^2+|g_2|^2).
+}
+\]
+Thus substantial two-pair cancellation propagates pair potential unless the relevant coefficient ratio is degenerate.
 
 ## 6. A finite global budget for actual leakage
 
@@ -193,17 +224,12 @@ Using energy dissipation,
 \]
 Hence the actual-leakage branch has a genuine finite a-priori action budget. This exponent alone is not yet sufficient for regularity, but it converts one branch of the sparse-escape trichotomy into an integrably controlled quantity.
 
-## 7. Updated closing target
+## 7. Closing target
 
-The remaining endgame is now organized by the true convolution rather than by an isolated triad tree:
+The corrected sparse conclusion is organized by the true convolution rather than by an isolated triad tree:
 \[
-\boxed{\text{sparse escape}\Rightarrow\text{mirror/cross-pair leakage or densification/cancellation}.}
+\boxed{\text{selected positive escape}\Rightarrow\text{same-spin sum-mirror pair potential}.}
 \]
-A candidate singular cascade must therefore repeatedly move into a dense many-to-one interaction network whenever it avoids the finite leakage budget.
+Static cancellation/diamond algebra does not yet close this implication: an exact two-pair state has \(\kappa>0\), vanishing sum output, and \(\Gamma_{\rm sp}<0\) at the same instant; arbitrarily long scalar cancellation ladders also defeat a uniform graph-only forcing bound. See `docs/notes/network-closure-audit.md`.
 
-The next proof target is twofold:
-
-1. show that repeated ``large additional cross-pair forcing'' forces effective multiplicity into the dense regime after a quantitatively controlled number of steps;
-2. on the dense/cancellation branch, convert the many-to-one deficit into a lower bound for Pexider/projective motion during positive critical flux.
-
-Closing these two statements with scale-invariant constants would connect the sparse mirror-leakage mechanism to the dense coherence-rigidity mechanism. Until then this remains a structural reduction, not a completed Navier–Stokes regularity proof.
+The remaining lemma must therefore be genuinely dynamical and symbol-aware: it must control weighted cancellation ladders and the subsequent cross-output evolution with scale-consistent localization, then convert that cost into \((\Gamma_{\rm sp})_+\in L^1_t\). This is still unproved.

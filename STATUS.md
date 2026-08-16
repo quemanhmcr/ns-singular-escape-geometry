@@ -15,11 +15,13 @@
 - Finite lifetime budget \(\int(K^2+D)dt<\infty\).
 - Exact defect evolution and commutator collapse.
 - Helical decomposition indicating that dangerous critical production is heterochiral.
+- Finite-triad correction: same-spin sum-mirror potential, projective reset, and two-pair diamond propagation away from coefficient degeneracy.
 
 ## Missing result
 
-A global quantitative depletion/barrier for coherent heterochiral triads sufficient to prevent an infinite singular escape chain.
+A scale-consistent, time-dependent, symbol-aware bridge from coherent heterochiral transfer to a time-integrable one-sided defect bound. Static cancellation/diamond algebra alone is insufficient.
 
 ## Latest focused notes
 - `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.
-- `docs/notes/critical-two-spin-obstruction.md` — scaling audit, classification of quadratic invariants, no positive two-spin critical quadratic invariant, and reduction to the balanced local heterochiral stack.
+- `docs/notes/critical-two-spin-obstruction.md` — scaling audit, corrected sum-mirror/diamond reduction, and the dense-cancellation endgame.
+- `docs/notes/network-closure-audit.md` — scale audit, an exact two-pair obstruction to pointwise coercivity, and the cancellation-ladder no-go result.
