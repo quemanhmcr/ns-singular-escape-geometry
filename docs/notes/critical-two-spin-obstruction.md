@@ -124,6 +124,42 @@ Equivalently, every relative level crossing \(K(t_1)\ge(1+\eta)K(t_0)\) obeys th
 \]
 Thus critical-norm escape forces \(\mathfrak A_r([0,T_*))=\infty\), with a linear scale-invariant cost for the **total** upward variation of \(K\). In particular, nonmonotone reset intervals cannot evade this charge.
 
+### A forcing-level action that closes directly
+
+The commutator action has a more concrete sufficient replacement. Since
+\[
+\Gamma_r=\langle\Lambda r,\Lambda^{-1}\mathcal L F\rangle,
+\]
+define the normal-forcing action
+\[
+\boxed{
+\mathfrak N_r(I):=
+\int_I E\,\|\Lambda^{-1}\mathcal L F\|_2^2dt.}
+\]
+It is scale invariant. (The zero mode causes no issue because the Euler forcing has zero spatial mean.) Young's inequality in the exact \(R\)-balance gives
+\[
+\boxed{
+R(t_1)+\nu\int_I E\|\Lambda r\|_2^2dt
++2\nu\int_I Z\mathcal Ydt
+\le R(t_0)+\nu^{-1}\mathfrak N_r(I).}
+\]
+Combining this with \(4a(K')_+\le2\nu Z\mathcal Y\) yields the direct no-reset estimate
+\[
+\boxed{
+\operatorname{Var}^+_I K
+\le\frac{R(t_0)+\nu^{-1}\mathfrak N_r(I)}{4a}.}
+\]
+Thus \(\mathfrak N_r([0,T_*))<\infty\) alone rules out critical-norm escape. It also implies \(\mathfrak A_r(I)\le R(t_0)/2+\mathfrak N_r(I)/\nu\).
+
+This is the natural all-network target because it sees **actual** normal forcing rather than pair potential. In helical Fourier variables,
+\[
+\|\Lambda^{-1}\mathcal L F\|_2^2
+=\sum_{k\ne0,\,\sigma}
+\left|\frac{\ell_\sigma(k)}{|k|}\right|^2
+|\widehat F_\sigma(k)|^2.
+\]
+At an exact two-shell profile, the on-shell multipliers vanish, so this is precisely the relative off-shell forcing cost. A valid cancellation/diamond theorem must bound this action; no such bound is proved here.
+
 The exact equality case is already rigid. If all nonnegative defect terms in the monotonicity identity other than \(4a\operatorname{Var}^+_I K\) vanish, then \(\int_I E\|\Lambda r\|_2^2dt=0\). Thus \(r=0\) on \(\mathbb R^3\), and is at most a constant torus mode in the periodic case. In either case \(\kappa=\langle r,F\rangle=0\), since the Euler forcing has zero spatial mean, and \(K'=-2\nu M_3\le0\). Therefore no interval with positive upward variation can be an exact action minimizer. The remaining Perelman-style task is a compactness--rigidity theorem excluding an **asymptotically** saturating sequence; that theorem is not supplied here.
 
 There is also an exact two-invariant shell-acceleration identity. At a nondegenerate instant with \(r=0\), let \(P_\perp\) be the orthogonal projection off \(\operatorname{span}\{u,\omega\}\). Differentiating the two normal equations for the minimizing \(\alpha,\beta\) gives

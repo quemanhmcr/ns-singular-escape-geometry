@@ -22,7 +22,7 @@
 
 ## Missing result
 
-A genuinely dynamical defect-action bound. The cleanest two-invariant form is \(\mathfrak A_r=\int E(\Gamma_r)_+dt<\infty\); the total-defect form is \(\mathfrak A_D=\int E(\Gamma)_+dt<\infty\), with a within-spin/spin-mixing split. The sharper scale-critical route seeks control of \(\mathfrak A_Q=\int(E/K)(\Gamma)_+dt\) and \(\mathfrak R_Q=\int(D/K)(-K')_+/K\,dt\). Static cancellation/diamond algebra alone is insufficient.
+A genuinely dynamical defect-action bound. The clean forcing-level target is \(\mathfrak N_r=\int E\|\Lambda^{-1}\mathcal L F\|_2^2dt<\infty\), which implies the two-invariant action \(\mathfrak A_r<\infty\); the total-defect form is \(\mathfrak A_D=\int E(\Gamma)_+dt<\infty\), with a within-spin/spin-mixing split. The sharper scale-critical route seeks control of \(\mathfrak A_Q=\int(E/K)(\Gamma)_+dt\) and \(\mathfrak R_Q=\int(D/K)(-K')_+/K\,dt\). Static cancellation/diamond algebra alone is insufficient.
 
 ## Latest focused notes
 - `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.
