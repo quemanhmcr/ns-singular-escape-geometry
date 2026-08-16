@@ -194,21 +194,37 @@ is scale invariant and obeys
 \bigl(K(t_1)^{2/3}-K(t_0)^{2/3}\bigr)_+
 \le2^{-2/3}\nu^{-1/3}\mathfrak C_r(I).}
 \]
-Thus any critical-norm escape forces
-\(\mathfrak C_r([0,T_*))=\infty\). This action has the same \(4/3\) time exponent as the existing finite budget for \(\|\Lambda^{-1}F\|_2\), but it measures the symbol-filtered normal forcing \(\Lambda^{-1}\mathcal LF\). The missing estimate is exactly this one-spatial-derivative normal gain; it is not supplied by the energy budget or by static diamond incidence.
-
-The endpoint has a rigid equality case. Set
+In fact this is an exact three-defect identity. Set
 \[
 \Delta_K:=KM_3-Z^2\ge0.
 \]
-Keeping the moment defect when optimizing gives the strengthened pointwise bound
+Define the scalar-optimization and forcing-alignment deficits by
+\[
+\mathcal S_r:=
+\frac{3}{2^{5/3}}\nu^{-1/3}K^{1/3}b_r^{4/3}
+-2Z^{1/2}b_r+\frac{2\nu Z^2}{K}\ge0,
+\qquad
+\mathcal A_r^{\rm al}:=Z^{1/2}b_r-\kappa\ge0.
+\]
+The first nonnegativity is precisely the scalar maximization above; the second is Cauchy--Schwarz. Splitting \(M_3=Z^2/K+\Delta_K/K\) in the exact \(K\)-balance gives
 \[
 \boxed{
-K'
-\le\frac{3}{2^{5/3}}\nu^{-1/3}K^{1/3}b_r^{4/3}
--\frac{2\nu}{K}\Delta_K.}
+\frac{3}{2^{5/3}}\nu^{-1/3}K^{1/3}b_r^{4/3}-K'
+=\mathcal S_r+2\mathcal A_r^{\rm al}+\frac{2\nu}{K}\Delta_K.}
 \]
-If \(d\mu(\rho)\) is the radial energy measure, then
+After division by \(K^{1/3}\) and integration, this becomes the scale-invariant monotonicity identity
+\[
+\boxed{
+2^{-2/3}\nu^{-1/3}\mathfrak C_r(I)
+-\bigl(K(t_1)^{2/3}-K(t_0)^{2/3}\bigr)
+=\frac23\int_I K^{-1/3}
+\left(\mathcal S_r+2\mathcal A_r^{\rm al}+\frac{2\nu}{K}\Delta_K\right)dt
+\ge0.}
+\]
+Thus any critical-norm escape forces
+\(\mathfrak C_r([0,T_*))=\infty\). This action has the same \(4/3\) time exponent as the existing finite budget for \(\|\Lambda^{-1}F\|_2\), but it measures the symbol-filtered normal forcing \(\Lambda^{-1}\mathcal LF\). The missing estimate is exactly this one-spatial-derivative normal gain; it is not supplied by the energy budget or by static diamond incidence.
+
+The endpoint has a rigid equality case. If \(d\mu(\rho)\) is the radial energy measure, then
 \[
 \Delta_K
 =\frac12\iint \rho\eta(\rho-\eta)^2\,d\mu(\rho)d\mu(\eta).

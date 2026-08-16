@@ -16,7 +16,7 @@
 - Exact defect evolution and commutator collapse.
 - Defect-envelope criterion: finite \(\mathfrak A_D=\int E(\Gamma)_+dt\) forces \(K\) to remain bounded.
 - Two-invariant monotonicity formula: finite \(\mathfrak A_r=\int E(\Gamma_r)_+dt\) bounds the total upward variation, hence \(K\).
-- Critical normal-forcing criterion: finite \(\mathfrak C_r=\int\|\Lambda^{-1}\mathcal L F\|_2^{4/3}dt\) directly bounds \(K^{2/3}\).
+- Critical normal-forcing monotonicity: finite \(\mathfrak C_r=\int\|\Lambda^{-1}\mathcal L F\|_2^{4/3}dt\) directly bounds \(K^{2/3}\), with scalar, alignment, and radial-moment defects.
 - Exact split of total production into within-spin and spin-mixing variance production.
 - Helical decomposition indicating that dangerous critical production is heterochiral.
 - Finite-triad correction: same-spin sum-mirror potential, projective reset, and two-pair diamond propagation away from coefficient degeneracy.
