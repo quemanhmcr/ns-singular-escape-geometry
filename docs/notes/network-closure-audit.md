@@ -111,6 +111,28 @@ and direct substitution gives
 \]
 Thus \(\kappa>0\) does not imply pointwise positive \(\Gamma_r\), either. Its strength is instead the integrated monotonicity identity that charges all positive variation of \(K\).
 
+The critical normal action introduced in the two-spin note does pass this stress test. Put
+\[
+b_r:=\|\Lambda^{-1}\mathcal L F\|_2.
+\]
+At either cross output \(m_\pm=(4,\pm2,0)\), \(|m_\pm|=2\sqrt5\). With the displayed \(\alpha,\beta\),
+\(\min_\sigma|\ell_\sigma(m_\pm)|\) is
+\[
+\ell_-(m_\pm)
+=\frac{d}{139},
+\qquad
+d:=336\sqrt5-140-32\sqrt{10}-172\sqrt2>0.
+\]
+Therefore the two displayed cross modes alone give
+\[
+\boxed{
+b_r^2\ge
+2\left|\frac{\ell_-(m_\pm)}{2\sqrt5}\right|^2
+\frac{19-5\sqrt5}{25}
+=\frac{d^2(19-5\sqrt5)}{250\cdot139^2}>0.}
+\]
+(The real mirror modes contribute the same amount in the full Fourier sum.) Thus the symmetry-protected cancellation at \(M\) does not evade \(\mathfrak C_r\): its cost is relocated to the symmetry-compatible cross outputs.
+
 The diamond conclusion still occurs: the cross outputs satisfy
 \[
 |F_{(4,2,0)}|^2=|F_{(4,-2,0)}|^2
@@ -181,7 +203,7 @@ A viable all-network lemma must add information absent from the current static r
 1. a fixed, scale-consistent packet/localization framework rather than bare mode multiplicities;
 2. a symbol-aware estimate that controls weighted cancellation ladders, not only their incidence graph;
 3. a time-dependent estimate that charges symmetry-compatible cross-output evolution, without assuming transversality of the cancelled output; and
-4. a bridge from the resulting normalized action to the critical normal action \(\mathfrak C_r\), which directly bounds \(K\), or to the stronger two-invariant action \(\mathfrak A_r\), or to the raw \((\Gamma_{\rm sp})_+\in L^1_t\) needed by the Riccati argument.
+4. a bridge from the resulting normalized action to the growth-selected critical normal action \(\mathfrak C_r^\uparrow\), which bounds all upward variation of \(K^{2/3}\), or to the stronger two-invariant action \(\mathfrak A_r\), or to the raw \((\Gamma_{\rm sp})_+\in L^1_t\) needed by the Riccati argument.
 
 Until all four are supplied, the desired full-network lemma remains unproved. The finite calculations above prevent treating its conclusion as a consequence of the present cancellation/diamond identities.
 

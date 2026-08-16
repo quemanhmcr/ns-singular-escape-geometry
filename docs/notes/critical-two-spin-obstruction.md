@@ -221,8 +221,24 @@ After division by \(K^{1/3}\) and integration, this becomes the scale-invariant 
 \left(\mathcal S_r+2\mathcal A_r^{\rm al}+\frac{2\nu}{K}\Delta_K\right)dt
 \ge0.}
 \]
+More sharply, no cost need be charged when \(K\) is decreasing. Define the growth-selected action
+\[
+\boxed{
+\mathfrak C_r^\uparrow(I):=
+\int_{I\cap\{K'>0\}}
+\|\Lambda^{-1}\mathcal LF\|_2^{4/3}dt.}
+\]
+Restricting the same exact identity to \(\{K'>0\}\) gives
+\[
+\boxed{
+2^{-2/3}\nu^{-1/3}\mathfrak C_r^\uparrow(I)
+-\operatorname{Var}_I^+\!\bigl(K^{2/3}\bigr)
+=\frac23\int_{I\cap\{K'>0\}}K^{-1/3}
+\left(\mathcal S_r+2\mathcal A_r^{\rm al}+\frac{2\nu}{K}\Delta_K\right)dt
+\ge0.}
+\]
 Thus any critical-norm escape forces
-\(\mathfrak C_r([0,T_*))=\infty\). This action has the same \(4/3\) time exponent as the existing finite budget for \(\|\Lambda^{-1}F\|_2\), but it measures the symbol-filtered normal forcing \(\Lambda^{-1}\mathcal LF\). The missing estimate is exactly this one-spatial-derivative normal gain; it is not supplied by the energy budget or by static diamond incidence.
+\(\mathfrak C_r^\uparrow([0,T_*))=\infty\), and this is the escape-adapted normal-forcing target for a cancellation/diamond theorem. It has the same \(4/3\) time exponent as the existing finite budget for \(\|\Lambda^{-1}F\|_2\), but it measures the symbol-filtered normal forcing \(\Lambda^{-1}\mathcal LF\). The missing estimate is exactly this one-spatial-derivative normal gain; it is not supplied by the energy budget or by static diamond incidence.
 
 The endpoint has a rigid equality case. If \(d\mu(\rho)\) is the radial energy measure, then
 \[
