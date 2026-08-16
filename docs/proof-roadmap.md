@@ -108,5 +108,5 @@ or directly in \(\kappa\), sufficient to force \(\nu_E\le\nu\) before \(K\) can 
 
 1. Fix a scale-consistent packet/localization framework, then seek a dynamical bound for \(\mathfrak A_D=\int E(\Gamma)_+dt\), the strong defect action that closes by itself.
 2. If that strong action is inaccessible, bound the sharper relative-defect production action \(\mathfrak A_Q\) and macroscopic reset action \(\mathfrak R_Q\); together they control the bypass entropy and all critical-norm growth.
-3. Relate either action route to the microscopic phase/projective reset network, and to the within-spin \((\Gamma_{\rm sp})_+\) Riccati route without identifying the productions.
+3. Control the explicit spin-mixing variance action, then relate either total-defect route to the microscopic phase/projective reset network and the within-spin \((\Gamma_{\rm sp})_+\) Riccati route.
 4. Stress-test each global estimate on explicit triads, cancellation ladders, symmetry quotients, diamonds, and critical stacks.
