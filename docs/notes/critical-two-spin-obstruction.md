@@ -137,7 +137,21 @@ Indeed, \(\mathcal L\Lambda^2u=\Lambda^2\mathcal Lu=0\), so the viscous vector i
 \qquad
 \mathcal Y''=2\|P_\perp\mathcal L F\|_2^2\quad\text{when }r=0.}
 \]
-Thus the relevant leakage is not a cancelled sum output itself, but the symmetry-compatible normal component of its subsequent Euler forcing. This is the exact dynamic quantity a network rigidity theorem must charge.
+This has a direct Fourier leakage form. Put
+\[
+\ell_\sigma(k):=(1-\sigma\beta)|k|-\alpha,
+\qquad
+\mathcal S_{\alpha,\beta}:=\{(k,\sigma):\ell_\sigma(k)=0\}.
+\]
+At \(r=0\), \(u\) is supported on \(\mathcal S_{\alpha,\beta}\), whereas \(\operatorname{span}\{u,\omega\}\) has no off-shell component. Hence, on the torus (with the corresponding integral on \(\mathbb R^3\)),
+\[
+\boxed{
+\mathcal Y''
+\ge2\sum_{(k,\sigma)\notin\mathcal S_{\alpha,\beta}}
+|\ell_\sigma(k)|^2|\widehat F_\sigma(k)|^2
+\quad\text{when }r=0.}
+\]
+Thus the relevant leakage is not a cancelled sum output itself, but the symmetry-compatible **off-shell normal forcing**. This is the exact dynamic quantity a network rigidity theorem must charge.
 
 This is not a closure: \(\Gamma_r\) is a two-invariant centered commutator, not automatically the same production as \(\Gamma_{\rm sp}\). It is, however, the cleanest entropy presently available: it removes both Euler-tangent directions before measuring escape, and needs no separate spin-mixing or reset term once its action is controlled.
 
