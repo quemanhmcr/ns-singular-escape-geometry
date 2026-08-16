@@ -126,7 +126,52 @@ Thus critical-norm escape forces \(\mathfrak A_r([0,T_*))=\infty\), with a linea
 
 The exact equality case is already rigid. If all nonnegative defect terms in the monotonicity identity other than \(4a\operatorname{Var}^+_I K\) vanish, then \(\int_I E\|\Lambda r\|_2^2dt=0\). Thus \(r=0\) on \(\mathbb R^3\), and is at most a constant torus mode in the periodic case. In either case \(\kappa=\langle r,F\rangle=0\), since the Euler forcing has zero spatial mean, and \(K'=-2\nu M_3\le0\). Therefore no interval with positive upward variation can be an exact action minimizer. The remaining Perelman-style task is a compactness--rigidity theorem excluding an **asymptotically** saturating sequence; that theorem is not supplied here.
 
+There is also an exact two-invariant shell-acceleration identity. At a nondegenerate instant with \(r=0\), let \(P_\perp\) be the orthogonal projection off \(\operatorname{span}\{u,\omega\}\). Differentiating the two normal equations for the minimizing \(\alpha,\beta\) gives
+\[
+r_t=P_\perp\mathcal L F.
+\]
+Indeed, \(\mathcal L\Lambda^2u=\Lambda^2\mathcal Lu=0\), so the viscous vector is tangent to the two-invariant shell manifold at that instant. Consequently,
+\[
+\boxed{
+\mathcal Y'=0,
+\qquad
+\mathcal Y''=2\|P_\perp\mathcal L F\|_2^2\quad\text{when }r=0.}
+\]
+Thus the relevant leakage is not a cancelled sum output itself, but the symmetry-compatible normal component of its subsequent Euler forcing. This is the exact dynamic quantity a network rigidity theorem must charge.
+
 This is not a closure: \(\Gamma_r\) is a two-invariant centered commutator, not automatically the same production as \(\Gamma_{\rm sp}\). It is, however, the cleanest entropy presently available: it removes both Euler-tangent directions before measuring escape, and needs no separate spin-mixing or reset term once its action is controlled.
+
+### Spectral compactness datum for a minimal-action escape
+
+The projection has an exact probability interpretation. Normalize Fourier energy to a probability measure, let \(X=|\xi|\), \(S=\sigma|\xi|\), and write \(m=\mathbb E X=K/E\), \(h=\mathbb E S=H/E\). The coefficients above are the least-squares regression of \(X\) on \(1,S\):
+\[
+\beta=\frac{\operatorname{Cov}(X,S)}{\operatorname{Var}(S)},
+\qquad
+\alpha=m-\beta h.
+\]
+Since \(X^2=S^2\), \(\operatorname{Var}(X)\le\operatorname{Var}(S)\); Cauchy--Schwarz and \(m\ge|h|\) therefore give
+\[
+\boxed{|\beta|\le1,\qquad 0\le\frac\alpha m\le2.}
+\]
+The Gram-degenerate case is the already rigid \(r=0\) case.
+
+For \(y=|\xi|/m\), let \(\mu_\sigma\) be the energy-normalized radial spectral measure of \(u_\sigma\). The relative two-invariant defect has the exact form
+\[
+\boxed{
+\frac{R}{K^2}
+=\sum_{\sigma=\pm}\int
+\left((1-\sigma\beta)y-\frac\alpha m\right)^2d\mu_\sigma(y).}
+\]
+Consequently, for every \(\varepsilon>0\),
+\[
+\sum_{\sigma=\pm}
+\mu_\sigma\!\left\{
+\left|(1-\sigma\beta)y-\frac\alpha m\right|>\varepsilon\right\}
+\le\frac{R}{\varepsilon^2K^2}.
+\]
+Thus \(R/K^2\ll1\) concentrates the normalized spectrum near one affine shell constraint in each helicity. If \(1-\sigma\beta\) stays away from zero this is genuine two-shell radial concentration; the only degenerate branch is \(\beta\to\pm1\), the almost pure-helicity branch.
+
+This is exactly the compactness input for a Perelman-style minimal-action argument. Indeed, if \(K(t_n)\to\infty\) while \(\mathfrak A_r([0,t_n])\le C K(t_n)\), then the \(R\)-balance gives \(R(t_n)\le R(0)+2CK(t_n)\), hence \(R(t_n)/K(t_n)^2\to0\). The normalized measures have first moment one and are therefore tight; after taking a subsequence, they have the two-shell (or degenerate pure-helicity) profile above. What is still missing is a symbol-aware phase/localization rigidity theorem excluding that limiting profile while it carries positive critical production.
 
 The entropy retains an exact triadic symbol. For a helical triad with transfer rates \(T_i\), put
 \[
