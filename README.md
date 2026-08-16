@@ -2,7 +2,7 @@
 
 Private research snapshot of a developing geometric/spectral approach to the 3D incompressible Navier–Stokes regularity problem.
 
-> **Status:** research program / proof attempt. This repository does **not** claim a completed proof of the Clay Millennium problem. The purpose of this snapshot is to preserve the exact identities, reductions, barriers, and remaining lemma as of 2026-08-15.
+> **Status:** research program / proof attempt. This repository does **not** claim a completed proof of the Clay Millennium problem. The purpose of this snapshot is to preserve the exact identities, reductions, barriers, and remaining lemma as of 2026-08-16.
 
 ## Central physical picture
 
