@@ -248,6 +248,94 @@ The endpoint has a rigid equality case. If \(d\mu(\rho)\) is the radial energy m
 \]
 Hence, after removing the harmless torus mean, \(\Delta_K=0\) forces one radial shell. On that shell \(r=0\), hence \(\kappa=0\). Equality in the preceding \(\mathfrak C_r\)-growth bound is therefore impossible at an instant with \(K'>0\). An action-minimizing escape would have to approach this forbidden equality: one-shell radial concentration, forcing alignment \(\Lambda^{-1}\mathcal LF\parallel\Lambda u\), and the optimizing relation \(Z=(Kb_r/(4\nu))^{2/3}\). Turning this exact rigidity into a quantitative compactness--rigidity exclusion is the remaining step.
 
+### Spectral-gap hardening on the mean-zero torus
+
+The radial defect has a stronger relation to the first centered defect when the spectrum has a gap. If the radial energy measure is supported in \([\lambda_0,\infty)\), then
+\[
+\boxed{
+\Delta_K\ge\lambda_0\frac KE\,D.}
+\]
+For completeness, normalize the measure, rescale to \(\lambda_0=1\), and write \(X=1+Y\), \(a=\mathbb EY\), \(b=\mathbb EY^2\), \(c=\mathbb EY^3\). The normalized difference between the two sides is
+\[
+(1+a)c-b^2-2ab+a^3
+\ge\frac{(b-a^2)^2}{a}\ge0,
+\]
+where \(ac\ge b^2\); the \(a=0\) case is immediate. Equality again forces one radial shell.
+
+For a mean-zero \(2\pi\)-periodic field, \(\lambda_0=1\). The growth-selected normal-action identity consequently yields
+\[
+\boxed{
+\begin{aligned}
+2^{-2/3}\nu^{-1/3}\mathfrak C_r^\uparrow(I)
+-\operatorname{Var}_I^+\!\bigl(K^{2/3}\bigr)
+&\ge\frac{4\nu}{3}
+\int_{I\cap\{K'>0\}}\frac{D}{E K^{1/3}}\,dt\\
+&\ge\frac{4\nu a}{3}
+\int_{I\cap\{K'>0,\ K>a\}}
+\frac{K^{5/3}}{E(K-a)}\,dt.
+\end{aligned}}
+\]
+Thus action inefficiency pays a quantitative radial-spread occupation cost on every torus growth epoch. On \(\mathbb R^3\) there is no fixed \(\lambda_0\): applying this strengthening uniformly requires a localized treatment of variance carried by an arbitrarily low-frequency tail.
+
+### Fixed-cutoff reduction of the low-frequency branch
+
+That low-frequency branch can be separated from the unbounded cascade. Fix \(L>0\), take self-adjoint Fourier cutoffs
+\[
+v=P_{\le L}u,\qquad w=P_{>L}u,
+\]
+and write \(E_w=\|w\|_2^2\), \(K_w=\langle w,\Lambda w\rangle\). Then \(K=K_w+K_v\) and \(K_v\le L E_0\). Put
+\[
+F_w:=P(w\times\operatorname{curl}w),
+\qquad
+\kappa_w:=\langle\Lambda w,F_w\rangle.
+\]
+The low-mode remainder is only a Gronwall error:
+\[
+\boxed{
+\left|\langle\Lambda w,F-F_w\rangle\right|
+\le C_{L,E_0}(1+K_w).}
+\]
+Indeed, \(\|v\|_{C^2}\le C_L E_0^{1/2}\). The \(v\cdot\nabla w\) term is controlled by the fractional transport commutator
+\[
+|\langle\Lambda w,v\cdot\nabla w\rangle|
+\lesssim\|\nabla v\|_\infty K_w,
+\]
+the \(w\cdot\nabla v\) term by boundedness of multiplication by \(\nabla v\) on \(\dot H^{1/2}\), and the low--low term by Bernstein and the spectral cutoff. The Leray projection is harmless in these pairings.
+
+Consequently,
+\[
+K_w'=2\kappa_w-2\nu M_{3,w}+\mathcal R_L,
+\qquad
+|\mathcal R_L|\le C_{L,E_0}(1+K_w).
+\]
+Apply the preceding normal-action calculation algebraically to the standalone field \(w\): let \(\mathcal L_w\) be its two-invariant operator, set
+\[
+b_w:=\|\Lambda^{-1}\mathcal L_wF_w\|_2,
+\qquad
+G_w:=\{2\kappa_w-2\nu M_{3,w}>0\},
+\]
+and define
+\[
+\mathfrak C_w^\uparrow(I):=\int_{I\cap G_w}b_w^{4/3}\,dt.
+\]
+Then
+\[
+K_w'
+\le\frac{3}{2^{5/3}}\nu^{-1/3}K_w^{1/3}b_w^{4/3}\mathbf1_{G_w}
++C_{L,E_0}(1+K_w).
+\]
+For \(Y_w=(1+K_w)^{2/3}\), Gronwall gives
+\[
+\boxed{
+Y_w(t)\le e^{C_{L,E_0}(t-t_0)}
+\left[
+Y_w(t_0)+2^{-2/3}\nu^{-1/3}
+\mathfrak C_w^\uparrow([t_0,t])
+\right].}
+\]
+Thus finite high--high normal action for one fixed cutoff rules out escape of the full \(K\). Since \(w\) has the spectral gap \(|\xi|>L\), the preceding radial hardening applies to this sole unbounded component; in particular,
+\(\Delta_{K,w}\ge L(K_w/E_w)D_w\). The cutoff family is scale covariant under \(L\mapsto\lambda L\). This is a localization reduction, not an estimate of \(\mathfrak C_w^\uparrow\); the remaining task is still to control its symbol-aware high--high cancellation dynamics.
+
 The exact equality case is already rigid. If all nonnegative defect terms in the monotonicity identity other than \(4a\operatorname{Var}^+_I K\) vanish, then \(\int_I E\|\Lambda r\|_2^2dt=0\). Thus \(r=0\) on \(\mathbb R^3\), and is at most a constant torus mode in the periodic case. In either case \(\kappa=\langle r,F\rangle=0\), since the Euler forcing has zero spatial mean, and \(K'=-2\nu M_3\le0\). Therefore no interval with positive upward variation can be an exact action minimizer. The remaining Perelman-style task is a compactness--rigidity theorem excluding an **asymptotically** saturating sequence; that theorem is not supplied here.
 
 There is also an exact two-invariant shell-acceleration identity. At a nondegenerate instant with \(r=0\), let \(P_\perp\) be the orthogonal projection off \(\operatorname{span}\{u,\omega\}\). Differentiating the two normal equations for the minimizing \(\alpha,\beta\) gives
