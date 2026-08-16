@@ -104,28 +104,29 @@ The diamond conclusion still occurs: the cross outputs satisfy
 \]
 Thus this is not a counterexample to diamond propagation. It proves the sharper fact that positive escape plus exact sum-output cancellation cannot yield a **pointwise** positive lower bound for \(\Gamma_{\rm sp}\). A closing lemma must charge the subsequent dynamics of the cross outputs.
 
-### The cancellation can be symmetry-protected for all smooth time
+### A general symmetry selection rule
 
-This example is not merely an instantaneous phase accident. On the \(2\pi\)-periodic torus, let
+On the \(2\pi\)-periodic torus, let \(S\in SO(3)\cap GL(3,\mathbb Z)\), let \(a\in\mathbb T^3\), and define
 \[
-S=\operatorname{diag}(1,-1,-1),\qquad a=(\pi,0,0),
-\qquad (\mathcal Gu)(x)=S u(Sx+a).
+(\mathcal Gu)(x)=S u(S^\top x+a).
 \]
-The displayed initial field satisfies
+The Navier–Stokes vector field is equivariant under \(\mathcal G\). If \(u=\mathcal Gu\), then
 \[
-\widehat u(k)=(-1)^{k_1}S\widehat u(Sk),
-\qquad\text{equivalently}\qquad \mathcal Gu=u.
+\widehat u(k)=e^{i(S^\top k)\cdot a}S\widehat u(S^\top k),
+\qquad
+\widehat F(k)=e^{i(S^\top k)\cdot a}S\widehat F(S^\top k).
 \]
-The Navier–Stokes vector field commutes with \(\mathcal G\); smooth uniqueness therefore preserves this relation. At \(M=(4,0,0)\), it gives
+Therefore, if \(S^\top k=k\), \(e^{ik\cdot a}=1\), and \(S\) has no \(+1\)-eigenvector on \(k^\perp\), incompressibility forces
 \[
-\widehat u(M,t)=S\widehat u(M,t),\qquad
-\widehat F(M,t)=S\widehat F(M,t).
+\boxed{\widehat u(k,t)=\widehat F(k,t)=0}
 \]
-Both coefficients are divergence-free and perpendicular to \(M\), while \(S\) acts as \(-1\) on that plane. Hence
+throughout every interval of smooth existence. Smooth uniqueness preserves the symmetry.
+
+For the field above, take
 \[
-\boxed{\widehat u(M,t)=\widehat F(M,t)=0}
+S=\operatorname{diag}(1,-1,-1),\qquad a=(\pi,0,0).
 \]
-throughout every interval of smooth existence. In particular, a universal transversality estimate based on \(\partial_tF_M\) is false; the cost, if any, must be read from symmetry-compatible cross outputs or another dynamical quantity.
+It satisfies \(\widehat u(k)=(-1)^{k_1}S\widehat u(Sk)\). At \(M=(4,0,0)\), the selection rule applies because \(SM=M\), \(e^{iM\cdot a}=1\), and \(S=-I\) on \(M^\perp\). Thus its sum-output cancellation is protected for all smooth time. In particular, a universal transversality estimate based on \(\partial_tF_M\) is false; the cost, if any, must be read from symmetry-compatible cross outputs or another dynamical quantity.
 
 ## 3. Diamond topology alone has no uniform forcing coercivity
 
