@@ -295,12 +295,22 @@ The low-mode remainder is only a Gronwall error:
 \left|\langle\Lambda w,F-F_w\rangle\right|
 \le C_{L,E_0}(1+K_w).}
 \]
-Indeed, \(\|v\|_{C^2}\le C_L E_0^{1/2}\). The \(v\cdot\nabla w\) term is controlled by the fractional transport commutator
+Indeed, \(\|v\|_{C^2}\le C_L E_0^{1/2}\). The two high--low estimates used here are
 \[
 |\langle\Lambda w,v\cdot\nabla w\rangle|
 \lesssim\|\nabla v\|_\infty K_w,
+\qquad
+|\langle\Lambda w,w\cdot\nabla v\rangle|
+\lesssim\|\nabla v\|_{C^1}K_w.
 \]
-the \(w\cdot\nabla v\) term by boundedness of multiplication by \(\nabla v\) on \(\dot H^{1/2}\), and the low--low term by Bernstein and the spectral cutoff. The Leray projection is harmless in these pairings.
+For the first, commute \(\Lambda^{1/2}\) through \(v\cdot\nabla\) and use
+\(\|[\Lambda^{1/2},v\cdot\nabla]w\|_2
+\lesssim\|\nabla v\|_\infty\|\Lambda^{1/2}w\|_2\). For the second, use boundedness of multiplication by \(\nabla v\) on \(\dot H^{1/2}\). Finally, the low--low term obeys
+\[
+|\langle\Lambda w,P(v\cdot\nabla v)\rangle|
+\le C_L E_0^{3/2},
+\]
+by Bernstein and the fact that \(v\cdot\nabla v\) has Fourier support below \(2L\). The Leray projection is harmless in these pairings.
 
 Consequently,
 \[
