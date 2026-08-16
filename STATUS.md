@@ -19,7 +19,7 @@
 
 ## Missing result
 
-Control of the two scale-invariant escape actions \(\int(E/K)(\Gamma)_+dt\) and \(2\nu\int(D/K)(Z/E)dt\), together with a no-bypass/reset estimate. Static cancellation/diamond algebra alone is insufficient.
+Control of the scale-invariant production and reset actions \(\mathfrak A_Q=\int(E/K)(\Gamma)_+dt\) and \(\mathfrak R_Q=\int(D/K)(-K')_+/K\,dt\). Static cancellation/diamond algebra alone is insufficient.
 
 ## Latest focused notes
 - `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.

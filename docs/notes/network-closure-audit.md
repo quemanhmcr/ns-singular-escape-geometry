@@ -241,3 +241,23 @@ Thus an unbounded \(K\) forces divergence of the scale-invariant bypass entropy
 =\int Q\,d(-\log E).}
 \]
 In particular, bounded \(Q\) together with a positive energy limit rules out singular escape. The rate \(\nu QZ/E\) is exactly the second viscous term in the barrier identity above. What remains is to rule out the only two ways around this estimate: unbounded relative defect or collapse of \(E\) to zero at the putative singular time.
+
+More usefully, the bypass entropy is itself controlled by two exact scale-invariant actions. Define the macroscopic reset action
+\[
+\mathfrak R_Q(I):=\int_I Q\,\frac{(-K')_+}{K}\,dt.
+\]
+Integrating the barrier identity and separating the sign of \(K'\) yields
+\[
+\boxed{
+\mathfrak B_Q(I)
+\le2\mathfrak A_Q(I)+Q(t_0)+\mathfrak R_Q(I),
+\qquad I=[t_0,t_1].}
+\]
+Indeed, the exact identity has the additional favorable terms \(-Q(t_1)\), \(-2\nu\int_I(E/K)\|\Lambda s\|_2^2dt\), and \(-\int_I Q(K')_+/K\,dt\), which were discarded. Combining with the logarithmic escape bound gives
+\[
+\boxed{
+\log\frac{K(t_1)}{K(t_0)}
+\le\frac{C_*^2}{4\nu^2}
+\bigl(2\mathfrak A_Q(I)+Q(t_0)+\mathfrak R_Q(I)\bigr).}
+\]
+Thus a singular escape forces divergence of \(\mathfrak A_Q\) or of \(\mathfrak R_Q\). This is the precise scale-invariant replacement for the informal all-network closing lemma. It is not yet a proof because controlling the microscopic cancellation network by these two actions remains open.

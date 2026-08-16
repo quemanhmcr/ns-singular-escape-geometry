@@ -102,7 +102,7 @@ or directly in \(\kappa\), sufficient to force \(\nu_E\le\nu\) before \(K\) can 
 
 ## Next technical directions
 
-1. Fix a scale-consistent packet/localization framework, then bound the relative-defect action \(\int(E/K)(\Gamma)_+dt\) from true cross-output dynamics.
-2. Control the bypass entropy \(2\nu\int(D/K)(Z/E)dt\), whose divergence is necessary for escape, and rule out energy collapse at a singular time.
-3. Prove that nonmonotone reset intervals cannot evade the relative-defect barrier cost; relate this route to the within-spin \((\Gamma_{\rm sp})_+\) Riccati route without identifying the productions.
+1. Fix a scale-consistent packet/localization framework, then bound the relative-defect production action \(\mathfrak A_Q\) from true cross-output dynamics.
+2. Bound the macroscopic reset action \(\mathfrak R_Q\); together with \(\mathfrak A_Q\), it controls the bypass entropy and all critical-norm growth.
+3. Relate the macroscopic reset action to the microscopic phase/projective reset network, and relate this total-defect route to the within-spin \((\Gamma_{\rm sp})_+\) Riccati route without identifying the productions.
 4. Stress-test each global estimate on explicit triads, cancellation ladders, symmetry quotients, diamonds, and critical stacks.
