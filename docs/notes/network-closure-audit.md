@@ -181,7 +181,7 @@ A viable all-network lemma must add information absent from the current static r
 1. a fixed, scale-consistent packet/localization framework rather than bare mode multiplicities;
 2. a symbol-aware estimate that controls weighted cancellation ladders, not only their incidence graph;
 3. a time-dependent estimate that charges symmetry-compatible cross-output evolution, without assuming transversality of the cancelled output; and
-4. a bridge from the resulting normalized action either to the two-invariant action \(\mathfrak A_r\), or to the raw \((\Gamma_{\rm sp})_+\in L^1_t\) needed by the Riccati argument.
+4. a bridge from the resulting normalized action to the critical normal action \(\mathfrak C_r\), which directly bounds \(K\), or to the stronger two-invariant action \(\mathfrak A_r\), or to the raw \((\Gamma_{\rm sp})_+\in L^1_t\) needed by the Riccati argument.
 
 Until all four are supplied, the desired full-network lemma remains unproved. The finite calculations above prevent treating its conclusion as a consequence of the present cancellation/diamond identities.
 

@@ -160,6 +160,61 @@ This is the natural all-network target because it sees **actual** normal forcing
 \]
 At an exact two-shell profile, the on-shell multipliers vanish, so this is precisely the relative off-shell forcing cost. A valid cancellation/diamond theorem must bound this action; no such bound is proved here.
 
+### A lower-time-integrability critical normal action
+
+There is an independent endpoint that closes the critical norm directly, without first evolving \(r\). Self-adjointness gives
+\[
+\kappa=\langle\mathcal Lu,F\rangle
+=\langle\Lambda u,\Lambda^{-1}\mathcal LF\rangle.
+\]
+Write
+\[
+b_r(t):=\|\Lambda^{-1}\mathcal LF(t)\|_2.
+\]
+Then \,\(|\kappa|\le Z^{1/2}b_r\), and \(Z^2\le KM_3\) in the exact critical balance yields
+\[
+K'
+\le2Z^{1/2}b_r-\frac{2\nu}{K}Z^2.
+\]
+For \(K>0\), maximizing the right side over \(Z\ge0\) gives the sharp scalar estimate
+\[
+\boxed{
+K'_+
+\le\frac{3}{2^{5/3}}\nu^{-1/3}K^{1/3}b_r^{4/3}.}
+\]
+Consequently the critical normal-forcing action
+\[
+\boxed{
+\mathfrak C_r(I):=\int_I
+\|\Lambda^{-1}\mathcal LF\|_2^{4/3}dt}
+\]
+is scale invariant and obeys
+\[
+\boxed{
+\bigl(K(t_1)^{2/3}-K(t_0)^{2/3}\bigr)_+
+\le2^{-2/3}\nu^{-1/3}\mathfrak C_r(I).}
+\]
+Thus any critical-norm escape forces
+\(\mathfrak C_r([0,T_*))=\infty\). This action has the same \(4/3\) time exponent as the existing finite budget for \(\|\Lambda^{-1}F\|_2\), but it measures the symbol-filtered normal forcing \(\Lambda^{-1}\mathcal LF\). The missing estimate is exactly this one-spatial-derivative normal gain; it is not supplied by the energy budget or by static diamond incidence.
+
+The endpoint has a rigid equality case. Set
+\[
+\Delta_K:=KM_3-Z^2\ge0.
+\]
+Keeping the moment defect when optimizing gives the strengthened pointwise bound
+\[
+\boxed{
+K'
+\le\frac{3}{2^{5/3}}\nu^{-1/3}K^{1/3}b_r^{4/3}
+-\frac{2\nu}{K}\Delta_K.}
+\]
+If \(d\mu(\rho)\) is the radial energy measure, then
+\[
+\Delta_K
+=\frac12\iint \rho\eta(\rho-\eta)^2\,d\mu(\rho)d\mu(\eta).
+\]
+Hence, after removing the harmless torus mean, \(\Delta_K=0\) forces one radial shell. On that shell \(r=0\), hence \(\kappa=0\). Equality in the preceding \(\mathfrak C_r\)-growth bound is therefore impossible at an instant with \(K'>0\). An action-minimizing escape would have to approach this forbidden equality: one-shell radial concentration, forcing alignment \(\Lambda^{-1}\mathcal LF\parallel\Lambda u\), and the optimizing relation \(Z=(Kb_r/(4\nu))^{2/3}\). Turning this exact rigidity into a quantitative compactness--rigidity exclusion is the remaining step.
+
 The exact equality case is already rigid. If all nonnegative defect terms in the monotonicity identity other than \(4a\operatorname{Var}^+_I K\) vanish, then \(\int_I E\|\Lambda r\|_2^2dt=0\). Thus \(r=0\) on \(\mathbb R^3\), and is at most a constant torus mode in the periodic case. In either case \(\kappa=\langle r,F\rangle=0\), since the Euler forcing has zero spatial mean, and \(K'=-2\nu M_3\le0\). Therefore no interval with positive upward variation can be an exact action minimizer. The remaining Perelman-style task is a compactness--rigidity theorem excluding an **asymptotically** saturating sequence; that theorem is not supplied here.
 
 There is also an exact two-invariant shell-acceleration identity. At a nondegenerate instant with \(r=0\), let \(P_\perp\) be the orthogonal projection off \(\operatorname{span}\{u,\omega\}\). Differentiating the two normal equations for the minimizing \(\alpha,\beta\) gives
