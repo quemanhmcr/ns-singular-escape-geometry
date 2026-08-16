@@ -171,6 +171,7 @@ Write
 \[
 b_r(t):=\|\Lambda^{-1}\mathcal LF(t)\|_2.
 \]
+All following identities are read on a component of \(\{K>0\}\); after removing a torus mean, \(K=0\) is the trivial non-escaping case.
 Then \,\(|\kappa|\le Z^{1/2}b_r\), and \(Z^2\le KM_3\) in the exact critical balance yields
 \[
 K'
