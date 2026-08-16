@@ -230,6 +230,6 @@ The corrected sparse conclusion is organized by the true convolution rather than
 \[
 \boxed{\text{selected positive escape}\Rightarrow\text{same-spin sum-mirror pair potential}.}
 \]
-Static cancellation/diamond algebra does not yet close this implication: an exact two-pair state has \(\kappa>0\), vanishing sum output, and \(\Gamma_{\rm sp}<0\) at the same instant; arbitrarily long scalar cancellation ladders also defeat a uniform graph-only forcing bound. See `docs/notes/network-closure-audit.md`.
+Static cancellation/diamond algebra does not yet close this implication: an exact two-pair state has \(\kappa>0\), a symmetry-protected vanishing sum output, and \(\Gamma_{\rm sp}<0\) at the same instant; arbitrarily long scalar cancellation ladders also defeat a uniform graph-only forcing bound. See `docs/notes/network-closure-audit.md`.
 
 The remaining lemma must therefore be genuinely dynamical and symbol-aware: it must control weighted cancellation ladders and the subsequent cross-output evolution with scale-consistent localization, then convert that cost into \((\Gamma_{\rm sp})_+\in L^1_t\). This is still unproved.

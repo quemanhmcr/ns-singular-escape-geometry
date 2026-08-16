@@ -24,4 +24,4 @@ A scale-consistent, time-dependent, symbol-aware bridge from coherent heterochir
 ## Latest focused notes
 - `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.
 - `docs/notes/critical-two-spin-obstruction.md` — scaling audit, corrected sum-mirror/diamond reduction, and the dense-cancellation endgame.
-- `docs/notes/network-closure-audit.md` — scale audit, an exact two-pair obstruction to pointwise coercivity, and the cancellation-ladder no-go result.
+- `docs/notes/network-closure-audit.md` — scale audit, symmetry-protected two-pair cancellation, and the cancellation-ladder no-go result.

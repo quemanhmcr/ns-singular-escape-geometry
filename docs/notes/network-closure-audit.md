@@ -104,6 +104,29 @@ The diamond conclusion still occurs: the cross outputs satisfy
 \]
 Thus this is not a counterexample to diamond propagation. It proves the sharper fact that positive escape plus exact sum-output cancellation cannot yield a **pointwise** positive lower bound for \(\Gamma_{\rm sp}\). A closing lemma must charge the subsequent dynamics of the cross outputs.
 
+### The cancellation can be symmetry-protected for all smooth time
+
+This example is not merely an instantaneous phase accident. On the \(2\pi\)-periodic torus, let
+\[
+S=\operatorname{diag}(1,-1,-1),\qquad a=(\pi,0,0),
+\qquad (\mathcal Gu)(x)=S u(Sx+a).
+\]
+The displayed initial field satisfies
+\[
+\widehat u(k)=(-1)^{k_1}S\widehat u(Sk),
+\qquad\text{equivalently}\qquad \mathcal Gu=u.
+\]
+The Navier–Stokes vector field commutes with \(\mathcal G\); smooth uniqueness therefore preserves this relation. At \(M=(4,0,0)\), it gives
+\[
+\widehat u(M,t)=S\widehat u(M,t),\qquad
+\widehat F(M,t)=S\widehat F(M,t).
+\]
+Both coefficients are divergence-free and perpendicular to \(M\), while \(S\) acts as \(-1\) on that plane. Hence
+\[
+\boxed{\widehat u(M,t)=\widehat F(M,t)=0}
+\]
+throughout every interval of smooth existence. In particular, a universal transversality estimate based on \(\partial_tF_M\) is false; the cost, if any, must be read from symmetry-compatible cross outputs or another dynamical quantity.
+
 ## 3. Diamond topology alone has no uniform forcing coercivity
 
 For \(L\ge1\), consider the scalar convolution data on \(\mathbb Z\)
@@ -142,7 +165,7 @@ A viable all-network lemma must add information absent from the current static r
 
 1. a fixed, scale-consistent packet/localization framework rather than bare mode multiplicities;
 2. a symbol-aware estimate that controls weighted cancellation ladders, not only their incidence graph;
-3. a time-persistence or phase-derivative estimate that charges the evolution of the cross outputs; and
+3. a time-dependent estimate that charges symmetry-compatible cross-output evolution, without assuming transversality of the cancelled output; and
 4. a bridge from the resulting normalized action to the raw \((\Gamma_{\rm sp})_+\in L^1_t\) needed by the Riccati argument.
 
 Until all four are supplied, the desired full-network lemma remains unproved. The finite calculations above prevent treating its conclusion as a consequence of the present cancellation/diamond identities.
