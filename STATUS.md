@@ -14,12 +14,13 @@
 - A critical spectral-defect barrier for \(\nu_E\).
 - Finite lifetime budget \(\int(K^2+D)dt<\infty\).
 - Exact defect evolution and commutator collapse.
+- Defect-envelope criterion: finite \(\mathfrak A_D=\int E(\Gamma)_+dt\) forces \(K\) to remain bounded.
 - Helical decomposition indicating that dangerous critical production is heterochiral.
 - Finite-triad correction: same-spin sum-mirror potential, projective reset, and two-pair diamond propagation away from coefficient degeneracy.
 
 ## Missing result
 
-Control of the scale-invariant production and reset actions \(\mathfrak A_Q=\int(E/K)(\Gamma)_+dt\) and \(\mathfrak R_Q=\int(D/K)(-K')_+/K\,dt\). Static cancellation/diamond algebra alone is insufficient.
+A genuinely dynamical defect-action bound. The strong immediately-closing form is \(\mathfrak A_D=\int E(\Gamma)_+dt<\infty\); the sharper scale-critical route seeks control of \(\mathfrak A_Q=\int(E/K)(\Gamma)_+dt\) and \(\mathfrak R_Q=\int(D/K)(-K')_+/K\,dt\). Static cancellation/diamond algebra alone is insufficient.
 
 ## Latest focused notes
 - `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.

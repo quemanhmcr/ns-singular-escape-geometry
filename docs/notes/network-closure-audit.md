@@ -261,3 +261,40 @@ Indeed, the exact identity has the additional favorable terms \(-Q(t_1)\), \(-2\
 \bigl(2\mathfrak A_Q(I)+Q(t_0)+\mathfrak R_Q(I)\bigr).}
 \]
 Thus a singular escape forces divergence of \(\mathfrak A_Q\) or of \(\mathfrak R_Q\). This is the precise scale-invariant replacement for the informal all-network closing lemma. It is not yet a proof because controlling the microscopic cancellation network by these two actions remains open.
+
+## 6. A direct defect-envelope criterion
+
+There is also a stronger, but completely closed, conditional route. Define
+\[
+\mathfrak A_D(I):=\int_I E\,(\Gamma)_+\,dt.
+\]
+It is scale invariant: \(E\) has scale weight \(-1\), \(\Gamma\) has weight \(3\), and \(dt\) has weight \(-2\). Direct integration of the exact \(D\)-balance gives
+\[
+D(t)\le D(t_0)+2\mathfrak A_D([t_0,t]).
+\]
+Thus, if \(D_*:=D(t_0)+2\mathfrak A_D([t_0,T))<\infty\), then \(D(t)\le D_*\) throughout the interval.
+
+This bounded defect has an explicit critical-norm envelope. Write
+\[
+f_a(K):=\frac{aK^2}{K-a}\quad(K>a),
+\qquad
+B_a(D_*):=
+\begin{cases}
+2a,&D_*\le4a^2,\\[2mm]
+\displaystyle\frac{D_*+\sqrt{D_*(D_*-4a^2)}}{2a},&D_*>4a^2.
+\end{cases}
+\]
+Since \(f_a'(K)=aK(K-2a)/(K-a)^2\), \(f_a\) is increasing above \(2a\), has minimum \(4a^2\), and \(f_a(B_a(D_*))=D_*\) in the second case. If \(K>B_a(D_*)\), then \(D\le D_*<f_a(K)\); the critical barrier's contrapositive gives \(K'\le0\). The elementary first-crossing argument therefore proves
+\[
+\boxed{\quad
+\sup_{t_0\le t<T}K(t)
+\le\max\{K(t_0),B_a(D_*)\}.
+\quad}
+\]
+Equivalently, any critical-norm escape necessarily has
+\[
+\boxed{\mathfrak A_D([0,T_*))=\infty.}
+\]
+On \(\mathbb R^3\), the boundedness of \(K=\|\Lambda^{1/2}u\|_2^2\) gives a bounded \(L_x^3\) norm by homogeneous Sobolev, so the standard endpoint \(L_t^\infty L_x^3\) continuation criterion then rules out a finite smooth breakdown. The same conclusion holds in the periodic setting through its corresponding critical continuation criterion.
+
+This does **not** close the program: \(\mathfrak A_D=\int K\,(E/K)(\Gamma)_+dt\) is stronger than \(\mathfrak A_Q\) precisely when \(K\) is large, and no current network estimate bounds it. Its value is diagnostic and structural: the genuinely Perelman-like entropy is the defect itself, whose derivative is production minus nonnegative dissipation. A valid microscopic proof must bound this strong action, or prove the sharper production--reset alternative from Section 5.
