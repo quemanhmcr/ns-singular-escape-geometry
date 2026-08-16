@@ -53,6 +53,10 @@ This document deliberately separates **proved identities/reductions** from the *
    -2\nu(Z/E)D.
    \]
 
+   In particular, finite \(\int E(\Gamma)_+dt\) bounds \(D\), and the critical
+   barrier then bounds \(K\) by an explicit first-crossing argument; see the
+   defect-envelope criterion in `docs/notes/network-closure-audit.md`.
+
 8. **Commutator collapse**
    \[
    \Gamma=-\langle s,[\Lambda,u\cdot\nabla]u\rangle.
@@ -102,9 +106,9 @@ or directly in \(\kappa\), sufficient to force \(\nu_E\le\nu\) before \(K\) can 
 
 ## Next technical directions
 
-1. Write the exact helical triad coefficient for \(\kappa\) and \(\Gamma\), retaining the centered radial factors \((|k|-m)\).
-2. Separate local/narrow-band and nonlocal triads.
-3. Exploit incompressibility and geometric degeneracy of nearly collinear triads.
-4. Combine heterochiral phase constraints with the finite lifetime budget.
-5. Search for a monotone or one-sided quantity built from \(K,D,K_+,K_-\) whose Euler contribution cancels more strongly than in each component separately.
-6. Stress-test any proposed closing estimate against explicit Fourier triads before using it globally.
+1. Fix a scale-consistent packet/localization framework, then seek a dynamical bound for the growth-selected critical normal action \(\mathfrak C_r^\uparrow=\int_{\{K'>0\}}\|\Lambda^{-1}\mathcal L F\|_2^{4/3}dt\), which controls all upward variation of \(K^{2/3}\). The stronger entropy action \(\mathfrak N_r=\int E\|\Lambda^{-1}\mathcal L F\|_2^2dt\) controls all upward variation of \(K\); at a two-shell profile both measure relative off-shell normal forcing.
+   On a mean-zero torus, its inefficiency also controls \(\int_{\{K'>0\}}D/(EK^{1/3})\,dt\). On \(\mathbb R^3\), a fixed-cutoff reduction leaves only the self high--high action \(\mathfrak C_w^\uparrow\), to which the same spectral-gap gain applies.
+2. In the total-defect route, bound \(\mathfrak A_D=\int E(\Gamma)_+dt\) directly or control its explicit spin-mixing variance action in addition to its within-spin part.
+3. If those strong actions are inaccessible, bound the sharper relative-defect production action \(\mathfrak A_Q\) and macroscopic reset action \(\mathfrak R_Q\); together they control the bypass entropy and all critical-norm growth.
+4. Develop a compactness--rigidity exclusion for an asymptotically saturating two-invariant action sequence: its normalized spectrum has a two-shell (or almost pure-helicity) profile, while exact saturation already forces \(r=0\) and no growth.
+5. Stress-test each global estimate on explicit triads, cancellation ladders, symmetry quotients, diamonds, and critical stacks.

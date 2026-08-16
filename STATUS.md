@@ -14,12 +14,19 @@
 - A critical spectral-defect barrier for \(\nu_E\).
 - Finite lifetime budget \(\int(K^2+D)dt<\infty\).
 - Exact defect evolution and commutator collapse.
+- Defect-envelope criterion: finite \(\mathfrak A_D=\int E(\Gamma)_+dt\) forces \(K\) to remain bounded.
+- Two-invariant monotonicity formula: finite \(\mathfrak A_r=\int E(\Gamma_r)_+dt\) bounds the total upward variation, hence \(K\).
+- Growth-selected normal-forcing monotonicity: finite \(\mathfrak C_r^\uparrow=\int_{\{K'>0\}}\|\Lambda^{-1}\mathcal L F\|_2^{4/3}dt\) bounds the total upward variation of \(K^{2/3}\), with scalar, alignment, and radial-moment defects.
+- Mean-zero torus hardening: \(\Delta_K=KM_3-Z^2\ge(K/E)D\), so normal-action inefficiency also pays a radial-spread occupation cost on every growth epoch.
+- Exact split of total production into within-spin and spin-mixing variance production.
 - Helical decomposition indicating that dangerous critical production is heterochiral.
+- Finite-triad correction: same-spin sum-mirror potential, projective reset, and two-pair diamond propagation away from coefficient degeneracy.
 
 ## Missing result
 
-A global quantitative depletion/barrier for coherent heterochiral triads sufficient to prevent an infinite singular escape chain.
+A genuinely dynamical normal-forcing bound. The direct scale-critical target is the growth-selected \(\mathfrak C_r^\uparrow=\int_{\{K'>0\}}\|\Lambda^{-1}\mathcal L F\|_2^{4/3}dt<\infty\); its unselected version is \(\mathfrak C_r\). The stronger entropy-level target \(\mathfrak N_r=\int E\|\Lambda^{-1}\mathcal L F\|_2^2dt<\infty\) implies \(\mathfrak A_r<\infty\); the total-defect form is \(\mathfrak A_D=\int E(\Gamma)_+dt<\infty\), with a within-spin/spin-mixing split. On \(\mathbb R^3\), fixed low modes are a Gronwall remainder, so the remaining target can be taken as the gapped self high--high action \(\mathfrak C_w^\uparrow\). Static cancellation/diamond algebra alone is insufficient.
 
 ## Latest focused notes
 - `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.
-- `docs/notes/critical-two-spin-obstruction.md` — scaling audit, classification of quadratic invariants, no positive two-spin critical quadratic invariant, and reduction to the balanced local heterochiral stack.
+- `docs/notes/critical-two-spin-obstruction.md` — two-invariant monotonicity action, corrected sum-mirror/diamond reduction, and the dense-cancellation endgame.
+- `docs/notes/network-closure-audit.md` — scale audit, symmetry-protected cancellation, and a scale-invariant relative-defect barrier action.

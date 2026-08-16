@@ -244,3 +244,72 @@ Gamma_sp = sum_{sigma=±} <(Lambda-m_sigma)^2 u_sigma,
 ```
 
 The key advantage to preserve is that `Gamma_sp` is not treated as a generic bilinear term: it retains energy/helicity conservation, helicity signs, radial differences, phase geometry, and the exact Lamb-vector structure.
+
+## 8. Exact spin-mixing remainder in the total defect
+
+The within-spin action is not identical to the total centered-defect action. This difference has an exact and useful form. Set
+
+```text
+m = (K_+ + K_-) / (E_+ + E_-),
+Delta_m = m_+ - m_-,
+B = <u_+,F_+> = -<u_-,F_->,
+Gamma_tot = sum_sigma <(Lambda-m)^2 u_sigma,F_sigma>.
+```
+
+The energy and helicity identities give
+
+```text
+<Lambda u_+,F_+> = <Lambda u_-,F_-> = kappa/2.
+```
+
+Since
+
+```text
+m_+ - m = (E_-/E) Delta_m,
+m_- - m = -(E_+/E) Delta_m,
+```
+
+and `<(Lambda-m_+)u_+,F_+> = kappa/2-m_+B`,
+`<(Lambda-m_-)u_-,F_-> = kappa/2+m_-B`, expanding
+`Lambda-m = (Lambda-m_sigma)+(m_sigma-m)` in `Gamma_tot` yields the exact decomposition
+
+```text
+Gamma_tot
+= Gamma_sp
+  + ((E_- - E_+) / E) Delta_m kappa
+  - (m_+^2 - m_-^2) B.
+```
+
+The remainder is the Euler production of the variance between the two helicity means. Indeed, define
+
+```text
+V = E_+ E_- (m_+ - m_-)^2.
+```
+
+Then the total defect splits as
+
+```text
+D = E (W_+ + W_-) + V,
+```
+
+For the Euler part alone,
+
+```text
+(d/dt) E_+ =  2B,     (d/dt) E_- = -2B,
+(d/dt) K_+ = (d/dt) K_- = kappa.
+```
+
+Substitution into `V` gives
+
+```text
+(d/dt)_Euler V = 2 E (Gamma_tot - Gamma_sp).
+```
+
+Thus define the two nonnegative scale-invariant actions
+
+```text
+A_sp(I)  = integral_I E (Gamma_sp)_+ dt,
+A_mix(I) = integral_I E (Gamma_tot-Gamma_sp)_+ dt.
+```
+
+Pointwise positivity gives `A_D(I) <= A_sp(I)+A_mix(I)`. The first is implied by the originally desired raw `(Gamma_sp)_+ in L^1_t`, because energy is bounded. The second is a genuine **spin-mixing action**, not a harmless error term. In particular, a network argument that only charges within-spin variance recharge cannot yet control the direct total-defect route; it must also charge Euler growth of `V`.
