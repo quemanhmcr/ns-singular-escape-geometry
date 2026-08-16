@@ -97,6 +97,20 @@ kq-\left(\frac{k+q}{2}\right)^2
 \]
 because both catalysts have radius \(p=m_-\).
 
+The two-invariant commutator introduced in `critical-two-spin-obstruction.md` does not restore a false pointwise coercivity. For this same state its projection coefficients are
+\[
+\alpha=\frac{32\sqrt{10}+172\sqrt2}{139},
+\qquad
+\beta=\frac{29-14\sqrt5}{139},
+\]
+and direct substitution gives
+\[
+\boxed{
+\Gamma_r
+=\frac{1152(269\sqrt5-865)}{5\cdot139^2}<0.}
+\]
+Thus \(\kappa>0\) does not imply pointwise positive \(\Gamma_r\), either. Its strength is instead the integrated monotonicity identity that charges all positive variation of \(K\).
+
 The diamond conclusion still occurs: the cross outputs satisfy
 \[
 |F_{(4,2,0)}|^2=|F_{(4,-2,0)}|^2

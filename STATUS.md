@@ -15,7 +15,7 @@
 - Finite lifetime budget \(\int(K^2+D)dt<\infty\).
 - Exact defect evolution and commutator collapse.
 - Defect-envelope criterion: finite \(\mathfrak A_D=\int E(\Gamma)_+dt\) forces \(K\) to remain bounded.
-- Two-invariant defect envelope: finite \(\mathfrak A_r=\int E(\Gamma_r)_+dt\) forces \(K\) to remain bounded.
+- Two-invariant monotonicity formula: finite \(\mathfrak A_r=\int E(\Gamma_r)_+dt\) bounds the total upward variation, hence \(K\).
 - Exact split of total production into within-spin and spin-mixing variance production.
 - Helical decomposition indicating that dangerous critical production is heterochiral.
 - Finite-triad correction: same-spin sum-mirror potential, projective reset, and two-pair diamond propagation away from coefficient degeneracy.
@@ -26,5 +26,5 @@ A genuinely dynamical defect-action bound. The cleanest two-invariant form is \(
 
 ## Latest focused notes
 - `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.
-- `docs/notes/critical-two-spin-obstruction.md` — scaling audit, corrected sum-mirror/diamond reduction, and the dense-cancellation endgame.
+- `docs/notes/critical-two-spin-obstruction.md` — two-invariant monotonicity action, corrected sum-mirror/diamond reduction, and the dense-cancellation endgame.
 - `docs/notes/network-closure-audit.md` — scale audit, symmetry-protected cancellation, and a scale-invariant relative-defect barrier action.

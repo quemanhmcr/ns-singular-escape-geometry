@@ -106,7 +106,8 @@ or directly in \(\kappa\), sufficient to force \(\nu_E\le\nu\) before \(K\) can 
 
 ## Next technical directions
 
-1. Fix a scale-consistent packet/localization framework, then seek a dynamical bound for the two-invariant action \(\mathfrak A_r=\int E(\Gamma_r)_+dt\), whose barrier closes by itself.
+1. Fix a scale-consistent packet/localization framework, then seek a dynamical bound for the two-invariant action \(\mathfrak A_r=\int E(\Gamma_r)_+dt\), whose monotonicity formula charges all upward variation of \(K\).
 2. In the total-defect route, bound \(\mathfrak A_D=\int E(\Gamma)_+dt\) directly or control its explicit spin-mixing variance action in addition to its within-spin part.
 3. If those strong actions are inaccessible, bound the sharper relative-defect production action \(\mathfrak A_Q\) and macroscopic reset action \(\mathfrak R_Q\); together they control the bypass entropy and all critical-norm growth.
-4. Stress-test each global estimate on explicit triads, cancellation ladders, symmetry quotients, diamonds, and critical stacks.
+4. Develop a compactness--rigidity exclusion for an asymptotically saturating two-invariant action sequence; exact saturation already forces \(r=0\) and no growth.
+5. Stress-test each global estimate on explicit triads, cancellation ladders, symmetry quotients, diamonds, and critical stacks.

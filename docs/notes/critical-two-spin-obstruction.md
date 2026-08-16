@@ -22,22 +22,22 @@ so
 \]
 is scale invariant. No argument based on a fixed energy cost per octave can close the last channel.
 
-Let \(a,b\) minimize
+Let \(\alpha,\beta\) minimize
 \[
-\|\Lambda u-au-b\omega\|_2^2,
+\|\Lambda u-\alpha u-\beta\omega\|_2^2,
 \qquad
-r:=\Lambda u-au-b\omega.
+r:=\Lambda u-\alpha u-\beta\omega.
 \]
 Where the Gram matrix is nonsingular, this is explicitly the orthogonal projection with
 \[
-\binom ab=
+\binom\alpha\beta=
 \begin{pmatrix}E&H\\H&Z\end{pmatrix}^{-1}
-\binom KJ,
+\binom K{J_\omega},
 \qquad
 H:=\langle u,\omega\rangle,
-\quad J:=\langle\Lambda u,\omega\rangle,
+\quad J_\omega:=\langle\Lambda u,\omega\rangle,
 \]
-and \(\mathcal Y=Z-(K,J)\begin{pmatrix}E&H\\H&Z\end{pmatrix}^{-1}(K,J)^\top\). At a Gram-degenerate point, \(\omega\) is proportional to \(u\), hence \(\Lambda u\) already lies in their span and \(r=0\); the formulas below are understood by continuity there.
+and \(\mathcal Y=Z-(K,J_\omega)\begin{pmatrix}E&H\\H&Z\end{pmatrix}^{-1}(K,J_\omega)^\top\). At a Gram-degenerate point, \(\omega\) is proportional to \(u\), hence \(\Lambda u\) already lies in their span and \(r=0\); the formulas below are understood by continuity there.
 Since \(r\perp u,\omega\) and the Euler forcing \(F=P(u\times\omega)\) satisfies
 \[
 \langle u,F\rangle=\langle\omega,F\rangle=0,
@@ -46,7 +46,7 @@ the critical production is exactly
 \[
 \boxed{\kappa=\langle\Lambda u,F\rangle=\langle r,F\rangle}.
 \]
-Put \(\mathcal L=\Lambda-a-b\operatorname{curl}\), so \(r=\mathcal Lu\), and define
+Put \(\mathcal L=\Lambda-\alpha-\beta\operatorname{curl}\), so \(r=\mathcal Lu\), and define
 \[
 \Gamma_r:=\langle\mathcal Lr,F\rangle.
 \]
@@ -54,12 +54,12 @@ For \(\mathcal Y=\|r\|_2^2\), stationarity of the minimizer and commutation of \
 \[
 \boxed{\mathcal Y'=2\Gamma_r-2\nu\|\Lambda r\|_2^2}.
 \]
-The derivatives of \(a,b\) disappear because \(r\perp u,\omega\). For the nonlinear term, \(\mathcal L\) commutes with the Leray projection and
+The derivatives of \(\alpha,\beta\) disappear because \(r\perp u,\omega\). For the nonlinear term, \(\mathcal L\) commutes with the Leray projection and
 \(\langle r,u\cdot\nabla r\rangle=0\), which gives the exact commutator form
 \[
 \boxed{
 \Gamma_r
-=-\langle r,[\Lambda-b\operatorname{curl},u\cdot\nabla]u\rangle.}
+=-\langle r,[\Lambda-\beta\operatorname{curl},u\cdot\nabla]u\rangle.}
 \]
 
 This projection yields a second scale-invariant defect action. Set
@@ -68,7 +68,7 @@ R:=E\mathcal Y,
 \qquad
 \mathfrak A_r(I):=\int_I E\,(\Gamma_r)_+\,dt.
 \]
-Under Navier--Stokes scaling the minimizer obeys \(a_\lambda=\lambda a\), \(b_\lambda=b\), hence \(\mathcal Y_\lambda=\lambda\mathcal Y\) and \((\Gamma_r)_\lambda=\lambda^3\Gamma_r\). Since \(E\) has weight \(-1\), both \(R\) and \(\mathfrak A_r\) are scale invariant. Combining the preceding balance with \(E'=-2\nu Z\) gives
+Under Navier--Stokes scaling the minimizer obeys \(\alpha_\lambda=\lambda\alpha\), \(\beta_\lambda=\beta\), hence \(\mathcal Y_\lambda=\lambda\mathcal Y\) and \((\Gamma_r)_\lambda=\lambda^3\Gamma_r\). Since \(E\) has weight \(-1\), both \(R\) and \(\mathfrak A_r\) are scale invariant. Combining the preceding balance with \(E'=-2\nu Z\) gives
 \[
 R'=2E\Gamma_r-2\nu E\|\Lambda r\|_2^2-2\nu Z\mathcal Y,
 \qquad
@@ -79,28 +79,58 @@ It also gives a sharper critical barrier. From \(\kappa=\langle r,u\times\omega\
 \[
 |\kappa|\le C_*\mathcal Y^{1/2}Z^{1/2}M_3^{1/2}.
 \]
-If \(K'>0\), then \(\kappa>\nu M_3\). Using \(Z^2\le KM_3\) and \(Z\ge K^2/E\), one obtains
+Using \(Z^2\le KM_3\) and \(Z\ge K^2/E\), one obtains
 \[
 \boxed{
 |\nu_E|\le C_*\sqrt{\frac RK},
 \qquad
 K'>0\ \Longrightarrow\ R>\frac{\nu^2}{C_*^2}K.}
 \]
-Consequently, if \(R_*:=R(t_0)+2\mathfrak A_r([t_0,T))<\infty\), then \(K'\le0\) whenever \(K\ge R_*/a\), where \(a=\nu^2/C_*^2\). A first-crossing argument proves
+More importantly, optimizing the same estimate in \(M_3^{1/2}\) gives the pointwise growth--dissipation charge
 \[
-\boxed{\sup_{t_0\le t<T}K(t)\le\max\{K(t_0),R_*/a\}.}
+\boxed{
+K'_+\le\frac{C_*^2}{2\nu}Z\mathcal Y
+=\frac{\nu}{2a}Z\mathcal Y,
+\qquad a:=\frac{\nu^2}{C_*^2}.}
 \]
-More locally, if \(K(t_0)<L\) and \(t_L\) is the first upward hitting time of \(L\), smoothness supplies positive-growth times approaching \(t_L\). The barrier then gives \(\sup_{[t_0,t_L]}R\ge aL\), hence
+This turns the \(R\)-balance into an exact Perelman-style monotonicity identity. For \(I=[t_0,t_1]\), write
 \[
-\boxed{\mathfrak A_r([t_0,t_L])\ge\frac12\bigl(aL-R(t_0)\bigr)_+.}
+\mathfrak A_r^-(I):=\int_I E\,(\Gamma_r)_-\,dt,
+\qquad
+\operatorname{Var}^+_I K:=\int_I(K')_+\,dt.
 \]
-Thus critical-norm escape forces \(\mathfrak A_r([0,T_*))=\infty\), with a linear scale-invariant action cost for every new critical level.
+Then
+\[
+\boxed{
+\begin{aligned}
+R(t_1)&+4a\operatorname{Var}^+_I K
++2\nu\int_I E\|\Lambda r\|_2^2dt
++2\mathfrak A_r^-(I)\\
+&+\int_I\bigl(2\nu Z\mathcal Y-4a(K')_+\bigr)dt
+=R(t_0)+2\mathfrak A_r(I).
+\end{aligned}}
+\]
+Every term on the left is nonnegative. It follows in particular that
+\[
+\boxed{
+\operatorname{Var}^+_I K
+\le\frac{R(t_0)+2\mathfrak A_r(I)}{4a},
+\qquad
+K(t)\le K(t_0)+\frac{R(t_0)+2\mathfrak A_r([t_0,t])}{4a}.}
+\]
+Equivalently, every relative level crossing \(K(t_1)\ge(1+\eta)K(t_0)\) obeys the scale-invariant epsilon-cost bound
+\[
+\boxed{R(t_0)+2\mathfrak A_r([t_0,t_1])\ge4a\eta K(t_0).}
+\]
+Thus critical-norm escape forces \(\mathfrak A_r([0,T_*))=\infty\), with a linear scale-invariant cost for the **total** upward variation of \(K\). In particular, nonmonotone reset intervals cannot evade this charge.
+
+The exact equality case is already rigid. If all nonnegative defect terms in the monotonicity identity other than \(4a\operatorname{Var}^+_I K\) vanish, then \(\int_I E\|\Lambda r\|_2^2dt=0\). Thus \(r=0\) on \(\mathbb R^3\), and is at most a constant torus mode in the periodic case. In either case \(\kappa=\langle r,F\rangle=0\), since the Euler forcing has zero spatial mean, and \(K'=-2\nu M_3\le0\). Therefore no interval with positive upward variation can be an exact action minimizer. The remaining Perelman-style task is a compactness--rigidity theorem excluding an **asymptotically** saturating sequence; that theorem is not supplied here.
 
 This is not a closure: \(\Gamma_r\) is a two-invariant centered commutator, not automatically the same production as \(\Gamma_{\rm sp}\). It is, however, the cleanest entropy presently available: it removes both Euler-tangent directions before measuring escape, and needs no separate spin-mixing or reset term once its action is controlled.
 
 The entropy retains an exact triadic symbol. For a helical triad with transfer rates \(T_i\), put
 \[
-\ell_i:=(1-\sigma_i b)|k_i|-a.
+\ell_i:=(1-\sigma_i\beta)|k_i|-\alpha.
 \]
 Its Euler contribution is exactly
 \[
@@ -110,7 +140,7 @@ For a homochiral triad of sign \(\sigma\), energy and helicity cancel the consta
 \[
 \boxed{
 2\Gamma_{r,\tau}
-=(1-\sigma b)^2(p-k)(q-k)(p-q)J.}
+=(1-\sigma\beta)^2(p-k)(q-k)(p-q)J.}
 \]
 Thus the two-invariant defect preserves the cubic radial-difference depletion of homochiral leakage. The heterochiral part, where the three \(\ell_i\) have different signed slopes, is exactly the remaining symbol-aware network problem.
 
