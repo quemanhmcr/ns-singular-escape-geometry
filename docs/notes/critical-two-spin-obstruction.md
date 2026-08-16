@@ -279,7 +279,7 @@ Thus action inefficiency pays a quantitative radial-spread occupation cost on ev
 
 ### Fixed-cutoff reduction of the low-frequency branch
 
-That low-frequency branch can be separated from the unbounded cascade. Fix \(L>0\), take self-adjoint Fourier cutoffs
+That low-frequency branch can be separated from the unbounded cascade. Fix \(L>0\), take complementary self-adjoint Fourier projectors
 \[
 v=P_{\le L}u,\qquad w=P_{>L}u,
 \]
