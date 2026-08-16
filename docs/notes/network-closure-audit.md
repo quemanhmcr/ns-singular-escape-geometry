@@ -170,3 +170,74 @@ A viable all-network lemma must add information absent from the current static r
 4. a bridge from the resulting normalized action to the raw \((\Gamma_{\rm sp})_+\in L^1_t\) needed by the Riccati argument.
 
 Until all four are supplied, the desired full-network lemma remains unproved. The finite calculations above prevent treating its conclusion as a consequence of the present cancellation/diamond identities.
+
+## 5. A Perelman-style relative-defect action
+
+The scale-invariant quantity naturally adapted to the critical barrier is
+\[
+Q:=\frac{D}{K}.
+\]
+Indeed, with \(a=\nu^2/C_*^2\), every time at which \(K'>0\) and \(K>a\) satisfies
+\[
+Q>q_*(K),\qquad q_*(K):=\frac{aK}{K-a}.
+\]
+Unlike the raw \(\Gamma\) action, the normalized production
+\[
+\mathfrak A_Q(I):=\int_I\frac{E}{K}\,(\Gamma)_+\,dt
+\]
+is scale invariant. Here \(\Gamma\) is the total centered-defect production from `docs/current-state.md`, not \(\Gamma_{\rm sp}\).
+
+There is an exact barrier identity. Put \(G=Q-q_*(K)\). From the exact \(D\)-balance,
+\[
+\frac{E}{K}\Gamma
+=\frac12G'
++\nu\frac{E}{K}\|\Lambda s\|_2^2
++\nu\frac{ZD}{EK}
++\frac12\left(q_*'(K)+\frac{q_*(K)}K\right)K'
++\frac{G}{2K}K',
+\]
+and
+\[
+q_*'(K)+\frac{q_*(K)}K
+=\frac{a(K-2a)}{(K-a)^2}.
+\]
+Therefore, on any barrier-following monotone epoch \(I=[t_0,t_1]\) where \(K\ge2a\), \(K'\ge0\), and \(G\ge0\),
+\[
+\boxed{
+\mathfrak A_Q(I)
+\ge\frac{G(t_1)-G(t_0)}2
++\frac12\bigl[\Phi(K(t_1))-\Phi(K(t_0))\bigr],
+\qquad
+\Phi(K)=a\log(K-a)+\frac{a^2}{K-a}.}
+\]
+The omitted viscous terms are nonnegative. In particular, if such an epoch carries \(K\) to arbitrarily large values, it spends at least \(\tfrac a2\log K+O(1)\) of the scale-invariant action.
+
+This is a genuine barrier-cost lemma, but not a closure: an escape could attempt to bypass it through broad-defect epochs \(Q\gg q_*(K)\) or through nonmonotone reset intervals. Thus the next rigorous target is sharply split: control \(\mathfrak A_Q\) from the true cross-output dynamics, and prove that barrier bypass/reset cannot evade that control.
+
+There is an independent no-bypass inequality from the same critical estimate. Optimizing
+\[
+K'=2\kappa-2\nu M_3
+\le2C_*\sqrt{\frac DE}\,Z^{1/2}M_3^{1/2}-2\nu M_3
+\]
+over \(M_3^{1/2}\) gives
+\[
+K'_+\le\frac{C_*^2}{2\nu}\frac DE Z.
+\]
+Since \(-E'/E=2\nu Z/E\), this becomes the exact scale-invariant differential bound
+\[
+\boxed{
+(\log K)'_+
+\le\frac{C_*^2}{4\nu^2}\,Q\left(-\frac{E'}E\right).}
+\]
+Consequently,
+\[
+\log\frac{K(t_1)}{K(t_0)}
+\le\frac{C_*^2}{4\nu^2}
+\int_{t_0}^{t_1}Q\,d(-\log E).
+\]
+Thus an unbounded \(K\) forces divergence of the scale-invariant bypass entropy
+\[
+\boxed{\mathfrak B_Q:=2\nu\int Q\frac ZE\,dt
+=\int Q\,d(-\log E).}
+\]
+In particular, bounded \(Q\) together with a positive energy limit rules out singular escape. The rate \(\nu QZ/E\) is exactly the second viscous term in the barrier identity above. What remains is to rule out the only two ways around this estimate: unbounded relative defect or collapse of \(E\) to zero at the putative singular time.

@@ -19,9 +19,9 @@
 
 ## Missing result
 
-A scale-consistent, time-dependent, symbol-aware bridge from coherent heterochiral transfer to a time-integrable one-sided defect bound. Static cancellation/diamond algebra alone is insufficient.
+Control of the two scale-invariant escape actions \(\int(E/K)(\Gamma)_+dt\) and \(2\nu\int(D/K)(Z/E)dt\), together with a no-bypass/reset estimate. Static cancellation/diamond algebra alone is insufficient.
 
 ## Latest focused notes
 - `docs/notes/helical-within-spin-defect.md` — exact helical-triad factorization, within-spin spectral defects, Riccati damping, and the reduced target `(Gamma_sp)_+ in L^1_t`.
 - `docs/notes/critical-two-spin-obstruction.md` — scaling audit, corrected sum-mirror/diamond reduction, and the dense-cancellation endgame.
-- `docs/notes/network-closure-audit.md` — scale audit, symmetry-protected two-pair cancellation, and the cancellation-ladder no-go result.
+- `docs/notes/network-closure-audit.md` — scale audit, symmetry-protected cancellation, and a scale-invariant relative-defect barrier action.
